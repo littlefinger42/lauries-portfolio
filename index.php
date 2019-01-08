@@ -95,7 +95,7 @@
                     <div class="col-sm-10 col-sm-offset-1 container">
                     	<div class="row"><!-- Introduction -->
                             <h1>Hi, my name is <strong>Laurie Copley</strong>.</h1>
-                            <p>I am 20 years old and live in Eindhoven, Netherlands.</p>
+                            <p>I am 22 years old and live in Eindhoven, Netherlands.</p>
                             <div id="sectAboutFace">
                                 <div class="image-switcher">
                             	    <img src="imgs/me.jpg" alt="Picture of me">
@@ -105,17 +105,17 @@
                         </div>
                         <div class="row"><!-- Two Columns -->
                             <div class="col-sm-6" >
-                                <p><span class="firstcharacter">F</span>rom a young age I have been fascinated by <strong>design</strong> and <strong>computing</strong>. At the age of 13 I was running my own private game server from my home computer. From this I developed a <strong>passion</strong> for programming, and ever since have been striving to expand my knowledge on <strong>web development</strong> and <strong>creative design</strong>.</p>
+                                <p><span class="firstcharacter">F</span>rom a young age I have been fascinated by <strong>design</strong> and <strong>computing</strong>. At the age of 13 I was running my own private game server from my home computer. From this I developed a <strong>passion</strong> for programming, and ever since have been striving to expand my knowledge on <strong>web development</strong>.</p>
                             </div>
                             <div class="col-sm-6">
-                                <p><span class="firstcharacter">I</span> started my <strong>web development career</strong> providing minimal, clean and professional websites for holiday cottages. After years of training, I decided I was ready to build larger web solutions for big clients, incorporating <strong>databases</strong>, <strong>content management systems</strong> and <strong>web applications</strong>.</p>
+                                <p><span class="firstcharacter">I</span> started my <strong>web development career</strong> providing minimal, clean and professional websites for holiday cottages. After years of self training, I was ready to build larger web solutions for big clients in the financial sector, incorporating <strong>REST</strong>, <strong>CMS</strong> and <strong>web applications</strong>.</p>
                             </div>
                         </div>
                         <div  class="row"><!-- Download Button -->
                         	<hr />
-                            <div class="btn-group" role="group" aria-label="action_Buttons">
+                            <!-- <div class="btn-group" role="group" aria-label="action_Buttons">
                             	<a href="downloads/lauriecopley_cv.pdf" target="_blank"><button type="button" class="btn btn-default">Download CV</button></a>
-                            </div>
+                            </div> -->
                         </div>
                     </div><!-- .container -->
                 </div><!-- .sectContent -->
@@ -216,10 +216,7 @@
                 <div class="col-sm-6 sectContent text-center"> <!-- Sect Content -->
                 	<div class="container-fluid">
                         <div class="row">
-                            <h2 data-bottom-top="opacity:0;" data-center-top="opacity:1;" data-center-bottom="opacity:1;" data-top-bottom="opacity:0;">email is the best way to contact me</h2>
-                        </div>
-                        <div class="row">
-                            <h1><a href="MAILTO:laurie@l96.nl">laurie@l96.nl</a></h1><!-- email address -->
+                            <p class="h2"><a href="https://www.linkedin.com/in/laurie-copley-ba4b43176/">linkedIn</a> is the best way to contact me</p>
                         </div>
                     </div><!-- .container -->
                 </div><!-- .sectContent -->
