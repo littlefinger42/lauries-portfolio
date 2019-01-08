@@ -1,0 +1,22 @@
+{
+  "name": "lauries-portfolio",
+  "version": "1.0.0",
+  "description": "Laurie Copley's Portfolio",
+  "main": "index.php",
+  "dependencies": {
+    "local-web-server": "^2.6.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Laurie",
+    "Copley",
+    "Portfolio"
+  ],
+  "author": "Laurie Copley",
+  "license": "ISC"
+}

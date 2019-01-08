@@ -1,0 +1,304 @@
+/* By Laurie Copley laurie@l96.nl */
+/*==============================Contents===============================
+
+1. Media Queries
+2. Body & Sections
+	a. General Content
+	b. Scrolling Sections
+	c. Navigation Links
+3. Section Specific
+	a. Home
+	b. About
+	c. Portfolio
+	d. Contact
+4. Fixes
+	a. No padding
+	b. Same height columns
+	c. Transparent buttons
+	
+=====================================================================*/
+
+/* === 1. ======= Media Queries ========== */
+@media screen and (max-width: 1280px) {
+	.portTitle, .portItem { height:300px!important; }
+	.portItem img { height:300px!important; }
+}
+@media screen and (max-width: 990px) {
+	.portTitle, .portItem { height:400px!important; }
+	.portItem img { height:400px!important; }
+}
+@media screen and (max-width: 768px){
+	.sectTitle, .portTitleTitle {display: none!important;}
+	.portTitle, .portItem { height:300px!important; }
+	.portItem img { height:300px!important; }
+}
+@media screen and (max-width: 550px){
+	.navLinks ul li {font-size:20px!important;padding:10px!important;}
+	.portTitle, .portItem { height:200px!important; }
+	.portItem img { height:200px!important; }
+	#sectAbout h1 { font-size: 22px!important;}
+}
+
+/* === 2. ======= Body & Sections ========== */
+/* ----- General Content -----*/
+body {
+	background:url(../imgs/homebg.jpg) fixed no-repeat;
+	background-size:cover;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	overflow-x: hidden;
+	height:100%!important;
+}
+.firstcharacter {
+	font-size: 180%;
+}
+
+/* ----- Scrolling Sections ----- */
+#sectAbout, #sectPortfolio, #sectContact {
+	position: relative;
+	width:100%;
+}
+#sectAbout, #sectContact {
+	background-color:#fffaff;
+}
+#sectHome {
+	height:100vh;
+	min-height:600px;
+	width:100%;
+}
+#sectAbout .sectTitle {
+	min-height:600px;
+	min-height:100vh;
+	background-color: #30BCED;
+}
+#sectPortfolio .sectContent {
+	background-color:#122C34;
+}
+#sectContact .sectTitle {
+	min-height:600px;
+	min-height:100vh;
+	background-color: #cf5c36;
+}
+.sectContent {
+	background-color:#fffaff;
+}
+.sectTitle, .sectContent, .portTitle {
+	display:flex;
+    align-items: center;
+	justify-content: center;
+}
+.sectTitle svg {
+	width:50%;
+}
+.sectTitle img, .portTitle img {
+	max-width: 100%;
+	-moz-transition: all 0.7s;
+	-webkit-transition: all 0.7s;
+	transition: all 0.7s;
+}
+.sectTitle:hover img, .portTitle:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+/* ----- NavLinks -----*/
+.navLinks ul {
+	margin: 0;
+	padding: 30px 0 0 0;
+	list-style-type: none;
+	text-align: center;
+}
+.navLinks ul li {
+	display: inline;
+	padding:10px;
+	font-size: 22px;
+	color: #eee5e9;
+}
+.navLinks ul li a {
+	text-decoration: none;
+	color: #eee5e9;
+}
+.navLinks ul li a:hover {
+	text-decoration:underline;
+}
+.homeLinks ul li {
+	font-size:24px;
+	padding:20px;
+}
+
+/* === 3. ======= Section Specific ========== */
+/* ----- sectHome ----- */
+#sectHome .sectContent {
+	min-height:600px;
+	min-height:100vh;	
+	background-color:transparent;
+}
+#sectHome svg {
+	padding-bottom:20px;
+}
+.ibg-bg {
+	position: absolute;
+	z-index: -41;
+}
+#homeLogo, #homeLogoSvg {
+	width: 80%;
+	max-width: 600px;
+    height: auto;
+}
+/* ----- sectAbout ----- */
+#sectAbout .sectContent {
+	padding:10px 0px 30px 0px;
+}
+#sectAboutFace {
+	position:relative;
+	width:40%;
+	margin:auto;
+	padding:20px 0px 20px 0px;
+}
+#sectAboutFace img {
+	width:100%;
+	height:100%;
+	padding:5%;
+}
+#aboutFaceSvg {
+	position:absolute;
+	width:auto;
+	height:auto;
+	top:20px;
+	left:0;
+}
+#sectAboutFace img {
+	border-radius: 50%;
+	min-width:100px;
+}
+.sectContent h1 {
+	transition: all 1s ease;
+}
+.sectContent:hover h1 {
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+/* ----- sectPortfolio ----- */
+#sectPortfolio .sectContent {
+	display:block;
+	min-height: 400px;
+}
+#sectPortfolio .sectTitle {
+	min-height:400px;
+}
+.portTitle p {
+	color: #fffaff;
+}
+.portTitle, .portItem { 
+	position: relative;
+	width:100%;
+	height:400px;
+}
+.portItem {
+	width:100%;
+	height:400px;
+	transition: all 1s ease;
+  	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+}
+.portItem img {
+	width:100%;
+	height:400px;
+}
+.portItem:after {
+	content: "";
+	z-index: 10;
+	display: block;
+	position: absolute;
+	height: 100%;
+	top: 0; left: 0; right: 0;
+	background: rgba(0, 0, 0, 0.6);
+	transition: all 0.3s;
+}
+.portItem:hover:after {
+	background: rgba(0, 0, 0, 0.0);
+}
+.portItem a {
+	z-index: 11;
+	position:absolute;
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
+}
+.portItemFixedHeight {
+  height: 400px;
+  position: relative;
+}
+.portVideoContainer {
+	position: absolute;
+	top:0%;left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+video {
+	position:absolute;
+	z-index:0;
+}
+video.fillWidth {
+	width: 100%;
+}
+/* ----- SectContact -----*/
+#sectContact .sectContent {
+	min-height:600px;
+	min-height:100vh;
+}
+
+
+/* === 4. ======= Fixes ========== */
+/* No Padding */
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Same Height Columns */
+row.sameHeight {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.sameHeight > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+.row.sameHeight {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.row.sameHeight > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+/* Transparent Buttons */
+.btn-primary-outline {
+	background: rgba(204, 204, 204, 0.0);
+	border-color: #ccc;
+	color: #ccc;
+	font-weight:bold;
+	transition:all 0.5s;
+}
+.btn-primary-outline:hover {
+	background: rgba(204, 204, 204, 0.5);
+	color: #ccc;
+}
