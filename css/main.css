@@ -160,6 +160,18 @@ body {
 	height:100%;
 	padding:5%;
 }
+.image-switcher {
+	z-index: 2;
+}
+.image-switcher img:last-child {
+	display: none;
+}
+.image-switcher:hover img:first-child {
+	display: none;
+}
+.image-switcher:hover img:last-child {
+	display: block;
+}
 #aboutFaceSvg {
 	position:absolute;
 	width:auto;

@@ -97,8 +97,10 @@
                             <h1>Hi, my name is <strong>Laurie Copley</strong>.</h1>
                             <p>I am 20 years old and live in Eindhoven, Netherlands.</p>
                             <div id="sectAboutFace">
-                            	<img src="imgs/me.jpg" alt="Picture of me">
-                                <svg id="aboutFaceSvg"></svg><!-- Blue dotted outline -->
+                                <div class="image-switcher">
+                            	    <img src="imgs/me.jpg" alt="Picture of me">
+                            	    <img src="imgs/me-alt.jpg" alt="Funny picture of me">
+                                </div>
                             </div>
                         </div>
                         <div class="row"><!-- Two Columns -->

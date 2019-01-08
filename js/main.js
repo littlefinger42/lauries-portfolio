@@ -37,7 +37,7 @@ window.onload = function(){
 			//return 1000;
 			return Math.abs(currentTop - targetTop) * 0.5; //easing
 		},
-		complexLinks: false,
+		complexLinks: false
 	});
 	
 // __ b __ Snap.svg _____
@@ -80,7 +80,7 @@ window.onload = function(){
 	});
 	
 	
-	function openLogoAnimation(t){ //Animation of logo opening
+	function openLogoAnimation(t) { //Animation of logo opening
 		logoOpen = true;
 		l_pt1.animate({ transform: "t-249,0"}, t);
 		l_pt2.animate({ transform: "t-249,0"}, t);
@@ -89,7 +89,8 @@ window.onload = function(){
 		six_pt2.animate({ transform: "t23,0"}, t);
 		
 	};
-	function closeLogoAnimation(t){ //Animation of logo closing
+
+	function closeLogoAnimation(t) { //Animation of logo closing
 		logoOpen = false;
 		l_pt1.animate({ transform: "t0,0"}, t);
 		l_pt2.animate({ transform: "t0,0"}, t);
@@ -97,48 +98,11 @@ window.onload = function(){
 		six_pt1.animate({ transform: "t0,0"}, t);
 		six_pt2.animate({ transform: "t0,0"}, t);
 	};
-		
-//Face Circle
-
-	var aboutFace = Snap("#aboutFaceSvg").attr({
-		viewBox: "100 100 200 200", //responsive viewbox
-	});
-	
-	var afCircle = aboutFace.circle(200,200,96,96);
-	var afCircleFlipped = aboutFace.circle(200,200,96,96);
-	
-	afCircle.attr({
-		transform: "r270",
-		fill:"transparent",
-		stroke: "#30BCED",
-		strokeDasharray: 1000,
-		strokeDashoffset: 1000,
-		strokeWidth: 3
-	});
-
-	afCircleFlipped.attr({
-		transform: "s-1,1 r270",
-		fill:"transparent",
-		stroke: "#30BCED",
-		strokeDasharray: 1000,
-		strokeDashoffset: 1000,
-		strokeWidth: 3
-	});
-	
-	$('#sectAbout .sectContent').mouseover(function() { 
-		afCircle.animate({ strokeDashoffset: 0}, 5000); 
-		afCircleFlipped.animate({ strokeDashoffset: 0}, 5000);
-	}).mouseout(function() { 
-		afCircle.stop(); 
-	});
-
-}
-
 
 //======== window.resize ========
 $(window).resize(function() {
 	$(".bg > .ibg-bg").css({ //responsive home background
     	width: $(window).outerWidth(),
         height: $(window).outerHeight()
-    })
-})
+    });
+});
