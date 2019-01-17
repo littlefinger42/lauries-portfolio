@@ -1,0 +1,10 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: $content-padding-xs;
+	@include responsive('sm') {
+		padding: $content-padding-sm;
+	}
+}

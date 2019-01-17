@@ -1,0 +1,17 @@
+.face {
+	
+}
+.image-switcher {
+	z-index: 2;
+	img:last-child {
+		display: none;
+	}
+	&:hover {
+		img:first-child {
+			display: none;
+		}
+		img:last-child {
+			display: block;
+		}
+	}
+}

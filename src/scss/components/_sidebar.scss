@@ -1,0 +1,9 @@
+.sidebar {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding: $content-padding-xs;
+	@include responsive('sm') {
+		padding: $content-padding-sm;
+	}
+}

@@ -140,7 +140,7 @@
 								<p>I believe in <strong>original</strong> code. This portfolio website demonstrates my <strong>raw web developing ability</strong>. The only parts not programmed by myself are highlighted in annotations. Feel free to check out my source code.</p>
                             </div>
                             <div class="row"><!-- Source Download Btn -->     
-		                        <a class="btn btn-lg" href="src/source.zip" target="_blank" download><button type="button" class="btn btn-default btn-primary-outline">Portfolio Source</button></a>
+		                        <a class="btn btn-lg" href="websites/source.zip" target="_blank" download><button type="button" class="btn btn-default btn-primary-outline">Portfolio Source</button></a>
                             </div>
                         </div>
                     </div>

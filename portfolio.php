@@ -33,7 +33,7 @@
 	                            echo '<iframe src="'.$array[$i][2].'" width="100%" height="900px"></iframe>';
 							} else {
 								echo '<p>This sites SQL database has been lost. Therefore it cant display any data or movies. Feel free to download the source code here.</p>';
-								echo '<a class="btn btn-lg" href="src/'.$array[$i][0].'.zip" target="_blank" download>Download Source</a>';
+								echo '<a class="btn btn-lg" href="websites/'.$array[$i][0].'.zip" target="_blank" download>Download Source</a>';
 							}
                         }
                     }

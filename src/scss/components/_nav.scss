@@ -1,0 +1,28 @@
+.nav {
+	border: $border-base-alt;
+	padding: 4px;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+		li {
+			display: inline;
+			padding:10px;
+			font-size: $font-size-nav;
+			font-family: $font-family-nav;
+			color: #eee5e9;
+			a {
+				@include underline-hover(2px);
+				text-decoration: none;
+				color: $color-text-alt;
+			}
+		}
+	}
+}
+.nav-container {
+	padding: $content-padding-xs;
+	@include responsive('sm') {
+		padding: $content-padding-sm;
+	}
+}

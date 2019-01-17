@@ -1,0 +1,38 @@
+//Sizes
+$font-size-base: 13px;
+$font-size-h4: $font-size-base;
+$font-size-h3: $font-size-base * 1.2;
+$font-size-h2: $font-size-base * 1.6;
+$font-size-h1: $font-size-base * 2;
+$font-size-nav: $font-size-base * 1.8;
+
+//Colors
+$color-1: #30BCED;
+$color-2: #122C34;
+$color-3: #cf5c36;
+$color-4: #EA526F;
+$color-5: #070600;
+
+$gray-lightest: #FFFFFF;
+$gray-darkest: $color-5;
+
+$color-headings: $gray-darkest;
+$color-headings-alt: $gray-lightest;
+$color-text: $color-2 ;
+$color-text-alt: $gray-lightest;
+
+//Fonts
+$font-family-headings: 'Share Tech Mono', monospace;
+$font-family-nav: 'Share Tech Mono', monospace;
+$font-family-base: 'Montserrat', sans-serif;
+
+//Borders
+$border-base: $gray-darkest solid 2px;
+$border-base-alt: $gray-lightest solid 2px;
+
+//Padding
+$content-padding-xs: 10px;
+$content-padding-sm: $content-padding-xs * 2;
+
+//Radius
+$form-element-radius: 2px;

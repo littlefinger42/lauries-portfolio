@@ -1,0 +1,56 @@
+section {
+	display: flex;
+	nav,
+	article {
+		// flex: 1 1 100%;
+		flex: 1 1 50%;
+		
+	}
+}
+.intro {
+	height: 100vh;
+}
+.section-1 {
+	height: 100vh;
+	background: repeating-linear-gradient(
+		45deg,
+		$color-5,
+		$color-5 10px,
+		$color-4 10px,
+		$color-4 20px
+		) fixed;
+	nav {
+		background: url(../img/test1.svg);
+	}
+}
+.section-2 {
+	height: 100vh;
+	background-color: $color-4;
+	nav {
+		background: url(../img/test1.svg);
+	}
+}
+.section-3 {
+	background-color: black;
+}
+.section-4 {
+	height: 100vh;
+	background: repeating-linear-gradient(
+		95deg,
+		$color-1,
+		$color-1 20px,
+		$color-3 20px,
+		$color-3 40px
+		) fixed;
+}
+
+.colour-1 {
+	background-color: $color-1;
+}
+.colour-2 {
+	background-color: $color-2;
+	color: $color-text-alt;
+}
+.colour-3 {
+	background-color: $color-3;
+}
