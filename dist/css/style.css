@@ -1,45 +1,58 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Share+Tech+Mono");
-section {
-  display: flex; }
-  section nav,
-  section article {
-    flex: 1 1 50%; }
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  box-sizing: border-box; }
+  .section nav,
+  .section article {
+    flex: 1 1 100%; }
+    @media (min-width: 768px) {
+      .section nav,
+      .section article {
+        flex: 1 1 50%; } }
+  .section--border {
+    border-top: black 20px solid;
+    border-bottom: black 20px solid; }
+  .section--1 {
+    background: repeating-linear-gradient(45deg, #ef903b, #ef903b 10px, #dfd9c0 10px, #dfd9c0 20px) fixed; }
+    .section--1 nav {
+      background: url(../img/test1.svg); }
+  .section--2 {
+    background-color: #dfd9c0; }
+    .section--2 nav {
+      background: url(../img/test1.svg); }
+  .section--3 {
+    background-color: #328095; }
+  .section--4 {
+    background-color: black; }
+  .section--5 {
+    background: repeating-linear-gradient(95deg, #328095, #328095 20px, #69ddb4 20px, #69ddb4 40px) fixed; }
 
 .intro {
   height: 100vh; }
 
-.section-1 {
-  height: 100vh;
-  background: repeating-linear-gradient(45deg, #070600, #070600 10px, #EA526F 10px, #EA526F 20px) fixed; }
-  .section-1 nav {
-    background: url(../img/test1.svg); }
-
-.section-2 {
-  height: 100vh;
-  background-color: #EA526F; }
-  .section-2 nav {
-    background: url(../img/test1.svg); }
-
-.section-3 {
-  background-color: black; }
-
-.section-4 {
-  height: 100vh;
-  background: repeating-linear-gradient(95deg, #30BCED, #30BCED 20px, #cf5c36 20px, #cf5c36 40px) fixed; }
-
 .colour-1 {
-  background-color: #30BCED; }
+  background-color: #328095; }
 
 .colour-2 {
   background-color: #122C34;
   color: #FFFFFF; }
 
 .colour-3 {
-  background-color: #cf5c36; }
+  background-color: #69ddb4; }
+
+.colour-4 {
+  background-color: #dfd9c0; }
 
 .h1, .h2, .h3, .h4, .h5 {
-  color: #070600;
+  color: #ef903b;
   font-family: "Share Tech Mono", monospace; }
+  .h1 a, .h2 a, .h3 a, .h4 a, .h5 a {
+    color: #ef903b; }
+    .h1 a:visited, .h1 a:hover, .h1 a:focus, .h2 a:visited, .h2 a:hover, .h2 a:focus, .h3 a:visited, .h3 a:hover, .h3 a:focus, .h4 a:visited, .h4 a:hover, .h4 a:focus, .h5 a:visited, .h5 a:hover, .h5 a:focus {
+      color: #ef903b;
+      text-decoration: none; }
 
 body {
   font-family: "Montserrat", sans-serif; }
@@ -65,7 +78,7 @@ a {
   text-align: center;
   text-decoration: none;
   font-family: "Share Tech Mono", monospace;
-  border: #070600 solid 2px;
+  border: #ef903b solid 2px;
   border-radius: 2px;
   padding: 0.5em 1em; }
   .btn--alt {
@@ -173,10 +186,20 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
   padding: 10px; }
   @media (min-width: 768px) {
     .content {
       padding: 20px; } }
+
+.content-border {
+  box-sizing: border-box;
+  border-right: black 10px solid;
+  border-left: black 10px solid; }
+  .content-border:last-child {
+    border-right: 0; }
+  .content-border:first-child {
+    border-left: 0; }
 
 .intro {
   background: url(../img/homebg.jpg) fixed no-repeat;
@@ -201,3 +224,8 @@ a {
     .portfolio article img {
       width: 100%;
       height: 400px; }
+
+.aside-banner {
+  min-height: 1em;
+  padding-left: 0;
+  padding-right: 0; }

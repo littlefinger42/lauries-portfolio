@@ -60,47 +60,60 @@
             </div>
         </section>
 
-        <section class="section-1">
-            <nav class="sidebar">
-                <div class="nav-container colour-1">
-                    <div class="nav">
-                        <!-- NavLinks -->
-                        <ul>
-                            <li><a href="#sectHome">Home</a></li>
-                            <li><b>-</b></li>
-                            <li><a href="#sectPortfolio">Portfolio</a></li>
-                            <li><b>-</b></li>
-                            <li><a href="#sectContact">Contact</a></li>
-                        </ul>
+        <section class="section section--1 section--border">
+            <nav>
+                <div class="sidebar">
+                    <div class="nav-container colour-1">
+                        <div class="nav">
+                            <ul>
+                                <li><a href="#sectHome">Home</a></li>
+                                <li><b>-</b></li>
+                                <li><a href="#sectPortfolio">Portfolio</a></li>
+                                <li><b>-</b></li>
+                                <li><a href="#sectContact">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
-            <article class="content">
-                <h1 class="h1 colour-1">Hi, my name is <strong>Laurie Copley</strong>.</h1>
-                <div class="face">
-                    <div class="image-switcher">
-                        <img src="img/me.jpg" alt="Picture of me">
-                        <img src="img/me-alt.jpg" alt="Funny picture of me">
+            <article>
+                <div class="content">
+                    <h1 class="h1 colour-1">Hi, my name is <strong>Laurie Copley</strong>.</h1>
+                    <div class="face">
+                        <div class="image-switcher">
+                            <img src="img/me.jpg" alt="Picture of me">
+                            <img src="img/me-alt.jpg" alt="Funny picture of me">
+                        </div>
                     </div>
+                    <h2 class="h2 colour-1">I'm good at websites and stuff.</h2>
                 </div>
-                <h2 class="h2 colour-1">I'm good at websites and stuff.</h2>
             </article>
         </section>
 
-        <aside class="colour-2 content">
-            <p><a href="">Mobile Web Specialist</a>, Frontend developer with expertise in accessibility.<br>
-                Prefers programming native, but works with frameworks.</p>
-            <button type="button" class="btn btn--secondary btn--alt btn--large"><span>Download CV</span></button>
+        <aside class="colour-2 content aside-banner">
+            <marquee 
+            behavior="scroll" 
+            direction="left"
+            onmouseover="this.stop();"
+            onmouseout="this.start();"
+            scrollamount="10">
+                <span class="h4"><a href="">Mobile Web Specialist</a>, Frontend developer with expertise in accessibility. Prefers programming native, but works with frameworks.</span>
+            </marquee>
+            <!-- <button type="button" class="btn btn--secondary btn--alt btn--large"><span>Download CV</span></button> -->
         </aside>
 
-        <section class="section-2">
-            <article class="content">
-                <h1 class="h1 colour-1">story</h1>
-                <p class="colour-1">Bacon ipsum dolor amet short ribs flank boudin pork belly pastrami hamburger. Landjaeger short loin cow chicken ham hock boudin. Biltong strip steak pork chop t-bone tenderloin flank ham hock pork loin. Short loin frankfurter pig doner, tail capicola corned beef shoulder pancetta.</p>
+        <section class="section section--2 section--border">
+            <article class="content-border">
+                <div class="content">
+                    <h1 class="h1 colour-1">story</h1>
+                    <p class="colour-1">Bacon ipsum dolor amet short ribs flank boudin pork belly pastrami hamburger. Landjaeger short loin cow chicken ham hock boudin. Biltong strip steak pork chop t-bone tenderloin flank ham hock pork loin. Short loin frankfurter pig doner, tail capicola corned beef shoulder pancetta.</p>
+                </div>
             </article>
-            <article class="content">
-                <h1 class="h1 colour-1">skills</h1>
-                <p class="colour-1">Salami kielbasa ribeye, spare ribs ham hock drumstick turkey ground round hamburger t-bone filet mignon. Drumstick t-bone andouille, turducken prosciutto tri-tip picanha ham hock chuck. Cow pork belly landjaeger buffalo kevin fatback chicken beef boudin salami sausage ribeye hamburger.</p>
+            <article class="content-border">
+                <div class="content">
+                    <h1 class="h1 colour-3">skills</h1>
+                    <p class="colour-3">Salami kielbasa ribeye, spare ribs ham hock drumstick turkey ground round hamburger t-bone filet mignon. Drumstick t-bone andouille, turducken prosciutto tri-tip picanha ham hock chuck. Cow pork belly landjaeger buffalo kevin fatback chicken beef boudin salami sausage ribeye hamburger.</p>
+                </div>
             </article>
         </section>
 
@@ -109,7 +122,7 @@
             <button type="button" class="btn btn--secondary btn--alt btn--large"><span>Download Portfolio Source</span></button>
         </aside>
 
-        <section class="section-3 portfolio">
+        <section class="section section--4 portfolio">
             <article>
                 <img src="img/port/albany.jpg" alt="Albany house portfolio image">
             </article>
@@ -118,24 +131,28 @@
             </article>
         </section>
 
-        <section class="section-4">
-            <nav class="sidebar">
-                <div class="nav-container colour-1">
-                    <div class="nav">
-                        <!-- NavLinks -->
-                        <ul>
-                            <li><a href="#sectHome">Home</a></li>
-                            <li><b>-</b></li>
-                            <li><a href="#sectPortfolio">Portfolio</a></li>
-                            <li><b>-</b></li>
-                            <li><a href="#sectContact">Contact</a></li>
-                        </ul>
+        <section class="section section--5">
+            <nav>
+                <div class="sidebar">
+                    <div class="nav-container colour-1">
+                        <div class="nav">
+                            <!-- NavLinks -->
+                            <ul>
+                                <li><a href="#sectHome">Home</a></li>
+                                <li><b>-</b></li>
+                                <li><a href="#sectPortfolio">Portfolio</a></li>
+                                <li><b>-</b></li>
+                                <li><a href="#sectContact">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
-            <div class="content">
-                <h1 class="h2 colour-1"><a href="https://www.linkedin.com/in/laurie-copley-ba4b43176/">linkedIn</a> is the best way to contact me</p></h1>
-            </div>
+            <article>
+                <div class="content">
+                    <h1 class="h2 colour-1"><a href="https://www.linkedin.com/in/laurie-copley-ba4b43176/">linkedIn</a> is the best way to contact me</p></h1>
+                </div>
+            </article>
         </section>
     </div>
 

@@ -1,6 +1,15 @@
 .h1, .h2, .h3, .h4, .h5 {
 	color: $color-headings;
 	font-family: $font-family-headings;
+	a {
+		color: $color-headings;
+		&:visited,
+		&:hover,
+		&:focus {
+			color: $color-headings;
+			text-decoration: none;
+		}
+	}
 }
 body {
 	font-family: $font-family-base;
