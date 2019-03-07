@@ -43,6 +43,9 @@ section {
 		$color-3 40px
 		) fixed;
 }
+.banner {
+	height: $banner-height;
+}
 
 .colour-1 {
 	background-color: $color-1;

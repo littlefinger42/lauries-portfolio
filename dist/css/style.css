@@ -27,6 +27,9 @@ section {
   height: 100vh;
   background: repeating-linear-gradient(95deg, #30BCED, #30BCED 20px, #cf5c36 20px, #cf5c36 40px) fixed; }
 
+.banner {
+  height: 400px; }
+
 .colour-1 {
   background-color: #30BCED; }
 
