@@ -1,47 +1,55 @@
-section {
+.section {
 	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	box-sizing: border-box;
 	nav,
 	article {
-		// flex: 1 1 100%;
-		flex: 1 1 50%;
-		
+		flex: 1 1 100%;
+		@include responsive('sm') {
+			flex: 1 1 50%;
+		}
+	}
+	&--border {
+		border-top: $border-thick;
+		border-bottom: $border-thick;
+	}
+	&--1 {
+		background: repeating-linear-gradient(
+			45deg,
+			$color-5,
+			$color-5 10px,
+			$color-4 10px,
+			$color-4 20px
+			) fixed;
+		nav {
+			background: url(../img/test1.svg);
+		}
+	}
+	&--2 {
+		background-color: $color-4;
+		nav {
+			background: url(../img/test1.svg);
+		}
+	}
+	&--3 {
+		background-color: $color-1;
+	}
+	&--4 {
+		background-color: black;
+	}
+	&--5 {
+		background: repeating-linear-gradient(
+			95deg,
+			$color-1,
+			$color-1 20px,
+			$color-3 20px,
+			$color-3 40px
+			) fixed;
 	}
 }
 .intro {
 	height: 100vh;
-}
-.section-1 {
-	height: 100vh;
-	background: repeating-linear-gradient(
-		45deg,
-		$color-5,
-		$color-5 10px,
-		$color-4 10px,
-		$color-4 20px
-		) fixed;
-	nav {
-		background: url(../img/test1.svg);
-	}
-}
-.section-2 {
-	height: 100vh;
-	background-color: $color-4;
-	nav {
-		background: url(../img/test1.svg);
-	}
-}
-.section-3 {
-	background-color: black;
-}
-.section-4 {
-	height: 100vh;
-	background: repeating-linear-gradient(
-		95deg,
-		$color-1,
-		$color-1 20px,
-		$color-3 20px,
-		$color-3 40px
-		) fixed;
 }
 .banner {
 	height: $banner-height;
@@ -56,4 +64,7 @@ section {
 }
 .colour-3 {
 	background-color: $color-3;
+}
+.colour-4 {
+	background-color: $color-4;
 }

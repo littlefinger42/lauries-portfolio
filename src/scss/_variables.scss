@@ -7,11 +7,11 @@ $font-size-h1: $font-size-base * 2;
 $font-size-nav: $font-size-base * 1.8;
 
 //Colors
-$color-1: #30BCED;
+$color-1: #328095;
 $color-2: #122C34;
-$color-3: #cf5c36;
-$color-4: #EA526F;
-$color-5: #070600;
+$color-3: #69ddb4;
+$color-4: #dfd9c0;
+$color-5: #ef903b;
 
 $gray-lightest: #FFFFFF;
 $gray-darkest: $color-5;
@@ -29,6 +29,7 @@ $font-family-base: 'Montserrat', sans-serif;
 //Borders
 $border-base: $gray-darkest solid 2px;
 $border-base-alt: $gray-lightest solid 2px;
+$border-thick: black 20px solid;
 
 //Padding
 $content-padding-xs: 10px;

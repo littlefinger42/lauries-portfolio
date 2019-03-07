@@ -3,8 +3,21 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
 	padding: $content-padding-xs;
 	@include responsive('sm') {
 		padding: $content-padding-sm;
+	}
+}
+
+.content-border {
+	box-sizing: border-box;
+	border-right: black 10px solid;
+	border-left: black 10px solid;
+	&:last-child {
+		border-right: 0;
+	}
+	&:first-child {
+		border-left: 0;
 	}
 }
