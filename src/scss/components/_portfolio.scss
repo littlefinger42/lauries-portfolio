@@ -1,7 +1,9 @@
 .portfolio {
 	display:flex;
+	flex-wrap: wrap;
 	article {
 		height: $portfolio-item-height;
+		flex: 1 0 50%;
 		img {
 			width: 100%;
 			height: $portfolio-item-height;

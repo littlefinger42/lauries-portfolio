@@ -7,8 +7,14 @@
 	@include responsive('sm') {
 		padding: $content-padding-sm;
 	}
-	&--space-around {
-		justify-content: space-around;
+	@include responsive('md') {
+		padding: $content-padding-md;
+	}
+	@include responsive('lg') {
+		padding: $content-padding-lg;
+	}
+	&--space-between {
+		justify-content: space-between;
 	}
 }
 
