@@ -1,0 +1,15 @@
+.footer {
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    background: white;
+    min-height: 1em;
+    height: $banner-height;
+    .corner-borders--2px {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    svg {
+        height: 1rem;
+    }
+}

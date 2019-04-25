@@ -15,17 +15,32 @@
 .background-white {
   background-color: white; }
 
+.background-zigzag {
+  background: repeating-linear-gradient(30deg, white, white 10px, #69ddb4 10px, #69ddb4 40px) fixed; }
+
 .p-small {
   padding: 4px; }
   @media (min-width: 768px) {
     .p-small {
       padding: 8px; } }
+  @media (min-width: 992px) {
+    .p-small {
+      padding: 16px; } }
+  @media (min-width: 1200px) {
+    .p-small {
+      padding: 32px; } }
 
 .p-normal {
   padding: 8px; }
   @media (min-width: 768px) {
     .p-normal {
       padding: 16px; } }
+  @media (min-width: 992px) {
+    .p-normal {
+      padding: 32px; } }
+  @media (min-width: 1200px) {
+    .p-normal {
+      padding: 64px; } }
 
 .section {
   display: flex;
@@ -47,8 +62,7 @@
     border-top: black 20px solid;
     border-bottom: black 20px solid; }
   .section--1 {
-    height: 100vh;
-    background: repeating-linear-gradient(30deg, white, white 10px, #69ddb4 10px, #69ddb4 40px) fixed; }
+    height: 100vh; }
   .section--2 {
     background-color: #dfd9c0; }
   .section--3 {
@@ -59,9 +73,6 @@
 
 .intro {
   height: 100vh; }
-
-.banner {
-  height: 100%; }
 
 .h1,
 .h2,
@@ -271,17 +282,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 8px; }
-  @media (min-width: 768px) {
-    .content {
-      padding: 16px; } }
-  @media (min-width: 992px) {
-    .content {
-      padding: 32px; } }
-  @media (min-width: 1200px) {
-    .content {
-      padding: 64px; } }
+  align-items: center; }
   .content--space-between {
     justify-content: space-between; }
 
@@ -329,10 +330,18 @@ a {
       width: 100%;
       height: 400px; }
 
-.aside-banner {
+.footer {
+  position: sticky;
+  top: 0;
+  flex-direction: row;
+  background: white;
   min-height: 1em;
-  padding-left: 0;
-  padding-right: 0; }
+  height: 100%; }
+  .footer .corner-borders--2px {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+  .footer svg {
+    height: 1rem; }
 
 .splash {
   width: 100%;
@@ -651,13 +660,13 @@ a {
   border-image-slice: 50%;
   border-image-width: 1.25em; }
 
-[data-animateonscroll] {
-  transition-duration: 0.5s;
+[animateonscroll] {
+  transition-duration: 0.7s;
   transition-delay: 0s;
   backface-visibility: hidden;
   transition-property: transform;
   transform: perspective(2000px) rotateY(-91deg); }
 
-[data-animateonscroll].animateonscroll-animate,
-body.animateonscroll-disabled [data-animateonscroll] {
+[animateonscroll].animateonscroll-animate,
+body.animateonscroll-disabled [animateonscroll] {
   transform: none; }

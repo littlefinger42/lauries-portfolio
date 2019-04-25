@@ -3,10 +3,22 @@
 	@include responsive('sm') {
 		padding: $content-padding-sm/2;
 	}
+	@include responsive('md') {
+		padding: $content-padding-md/2;
+	}
+	@include responsive('lg') {
+		padding: $content-padding-lg/2;
+	}
 }
 .p-normal {
 	padding: $content-padding-xs;
 	@include responsive('sm') {
 		padding: $content-padding-sm;
+	}
+	@include responsive('md') {
+		padding: $content-padding-md;
+	}
+	@include responsive('lg') {
+		padding: $content-padding-lg;
 	}
 }

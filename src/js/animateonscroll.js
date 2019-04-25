@@ -28,7 +28,7 @@
     });
 
     _elements = [].filter.call(
-      document.querySelectorAll("[data-animateonscroll]"),
+      document.querySelectorAll("[animateonscroll]"),
       _element => !_element.classList.contains(animateClassName)
     );
 

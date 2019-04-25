@@ -14,3 +14,12 @@
 .background-white {
 	background-color: white;
 }
+.background-zigzag {
+	background: repeating-linear-gradient(
+		30deg,
+		white,
+		white 10px,
+		$colour-3 10px,
+		$colour-3 40px
+		) fixed;
+}
