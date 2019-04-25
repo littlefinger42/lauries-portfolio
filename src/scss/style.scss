@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Share+Tech+Mono');
 
 @import './variables';
+@import './mixims/helpers';
 @import './mixims/responsive';
 @import './mixims/resets';
 @import './mixims/effects';
 @import './mixims/animations';
 
+@import './components/colours';
+@import './components/padding';
 @import './components/grid';
 @import './components/type';
 @import './components/buttons';
@@ -16,3 +19,7 @@
 @import './components/face';
 @import './components/portfolio';
 @import './components/asides';
+@import './components/splash';
+@import './components/icons';
+@import './components/effects';
+@import './components/animateonscroll';

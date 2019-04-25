@@ -1,0 +1,12 @@
+.p-small {
+	padding: $content-padding-xs/2;
+	@include responsive('sm') {
+		padding: $content-padding-sm/2;
+	}
+}
+.p-normal {
+	padding: $content-padding-xs;
+	@include responsive('sm') {
+		padding: $content-padding-sm;
+	}
+}

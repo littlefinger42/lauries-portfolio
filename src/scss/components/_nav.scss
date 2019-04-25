@@ -1,5 +1,5 @@
 .nav {
-	border: $border-base-alt;
+	border: $border-base;
 	padding: 4px;
 	ul {
 		margin: 0;
@@ -11,11 +11,11 @@
 			padding:10px;
 			font-size: $font-size-nav;
 			font-family: $font-family-nav;
-			color: #eee5e9;
+			color: $color-nav;
 			a {
-				@include underline-hover(2px);
+				@include underline-hover(2px, $color-nav);
 				text-decoration: none;
-				color: $color-text-alt;
+				color: $color-nav;
 			}
 		}
 	}

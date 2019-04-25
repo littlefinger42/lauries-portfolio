@@ -1,8 +1,7 @@
-.face {
-	
-}
 .image-switcher {
 	z-index: 2;
+	height:273px;
+	@include corner-borders($color-headings);
 	img:last-child {
 		display: none;
 	}

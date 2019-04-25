@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--#### Header ####-->
-
 <head>
     <!-- Meta -->
     <meta charset="utf-8">
@@ -25,45 +23,32 @@
     <link rel="mask-icon" href="imgs/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- Scripts -->
-    <!-- <script type="text/javascript" src="js/main.js"></script> -->
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Josefin+Sans" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
-<!--#### End Header ####-->
-
-
-
-<!--#### Body ####-->
 
 <body>
     <div class="">
-        
-        <div class="splash">
-            <div class="splash_logo">
-                BJL
-            </div>
-            <div class="splash_svg">
-                <svg width="100%" height="100%">
-                    <rect width="100%" height="100%">
-                </svg>
-            </div>
-            <div class="splash_minimize">
-                <svg width="100%" height="100%">
-                    <rect width="100%" height="100%">
-                </svg>
-            </div>
-        </div>
-
         <section class="intro">
-            <div class="intro-content">
+            <div class="splash">
+                <div class="splash-logo">
+                    <h1 class="title"><a href="https://www.linkedin.com/in/laurie-copley-ba4b43176/"
+                            target="_blank">Laurie Copley</a></h1>
+                    <h2 class="subtitle">Digital Portfolio</h2>
+                </div>
+                <div class="splash-svg">
+                    <svg width="100%" height="100%">
+                        <rect width="100%" height="100%">
+                    </svg>
+                </div>
+                <div class="splash-minimize">
+                    <svg width="100%" height="100%">
+                        <rect width="100%" height="100%">
+                    </svg>
+                </div>
+            </div>
+            <div class="intro-navigation">
                 <div class="nav">
                     <ul>
                         <li><a href="#sectAbout">About</a></li>
@@ -76,65 +61,46 @@
             </div>
         </section>
 
-        <section class="section-1">
-            <nav class="sidebar">
-                <div class="nav-container colour-1">
-                    <div class="nav">
-                        <!-- NavLinks -->
-                        <ul>
-                            <li><a href="#sectHome">Home</a></li>
-                            <li><b>-</b></li>
-                            <li><a href="#sectPortfolio">Portfolio</a></li>
-                            <li><b>-</b></li>
-                            <li><a href="#sectContact">Contact</a></li>
-                        </ul>
-                    </div>
+        <section class="section section--1">
+            <aside class="content content--space-around">
+                <div class="background-3 p-small" data-animateonscroll>
+                    <div class="h1">frontend web developer</div>
+                    <div class="h1">mobile web specialist</div>
+                    <div class="h1">expertese in accessibility</div>
                 </div>
-            </nav>
-            <article class="content">
-                <h1 class="h1 colour-1">Hi, my name is <strong>Laurie Copley</strong>.</h1>
-                <div class="face">
-                    <div class="image-switcher">
+                <div class="face" data-animateonscroll>
+                    <div class="image-switcher img-corner-borders">
                         <img src="img/me.jpg" alt="Picture of me">
                         <img src="img/me-alt.jpg" alt="Funny picture of me">
                     </div>
                 </div>
-                <h2 class="h2 colour-1">I'm good at websites and stuff.</h2>
-            </article>
-        </section>
-
-        <aside class="banner colour-2 content">
-            <p><a href="">Mobile Web Specialist</a>, Frontend developer with expertise in accessibility.<br>
-                Prefers programming native, but works with frameworks.</p>
-            <button type="button" class="btn btn--secondary btn--alt btn--large"><span>Download CV</span></button>
-        </aside>
-
-        <section class="section-2">
+            </aside>
             <article class="content">
-                <h1 class="h1 colour-1">story</h1>
-                <p class="colour-1">Bacon ipsum dolor amet short ribs flank boudin pork belly pastrami hamburger.
-                    Landjaeger short loin cow chicken ham hock boudin. Biltong strip steak pork chop t-bone tenderloin
-                    flank ham hock pork loin. Short loin frankfurter pig doner, tail capicola corned beef shoulder
-                    pancetta.</p>
-            </article>
-            <article class="content">
-                <h1 class="h1 colour-1">skills</h1>
-                <p class="colour-1">Salami kielbasa ribeye, spare ribs ham hock drumstick turkey ground round hamburger
+                <p class="background-white p-small">Software development has always been a part of my life. At age 13 I became enticed
+                    with programming languages from hosting my own Runescape private server. It wasn't long before I
+                    realised these were profitable skills.</p>
+                <p class="background-white p-small">Salami kielbasa ribeye, spare ribs ham hock drumstick turkey ground round hamburger
                     t-bone filet mignon. Drumstick t-bone andouille, turducken prosciutto tri-tip picanha ham hock
                     chuck. Cow pork belly landjaeger buffalo kevin fatback chicken beef boudin salami sausage ribeye
-                    hamburger.</p>
+                    hamburger. Bacon ipsum dolor amet short ribs flank boudin pork belly pastrami hamburger. Landjaeger
+                    short loin cow chicken ham hock boudin. Biltong strip steak pork chop t-bone tenderloin flank ham
+                    hock pork loin. Short loin frankfurter pig doner, tail capicola corned beef shoulder pancetta.</p>
             </article>
         </section>
 
-        <aside class="banner colour-2 content">
-            <p>I believe in <strong>original</strong> code. This portfolio website demonstrates my <strong>raw web
-                    developing ability</strong>. The only parts not programmed by myself are highlighted in annotations.
-                Feel free to check out my source code.</p>
-            <button type="button" class="btn btn--secondary btn--alt btn--large"><span>Download Portfolio
-                    Source</span></button>
+        <aside class="banner content">
+            <p class="corner-borders--2px"><a href=""><svg title="Google" alt="Google" class="icon-font" aria-hidden="true" focusable="false"
+                        data-prefix="fab" data-icon="google" class="svg-inline--fa fa-google fa-w-16" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
+                        <path fill="currentColor"
+                            d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z">
+                        </path>
+                    </svg> Mobile Web Specialist</a>, frontend developer with expertise in accessibility.<br>
+                Prefers programming native, but works with frameworks.</p>
+            <button type="button" class="btn btn--large"><span>Download CV</span></button>
         </aside>
 
-        <section class="section-3 portfolio">
+        <section class="section section--3 portfolio">
             <article>
                 <img src="img/port/albany.jpg" alt="Albany house portfolio image">
             </article>
@@ -143,9 +109,16 @@
             </article>
         </section>
 
-        <section class="section-4">
+        <aside class="banner background-2 content">
+            <p class="corner-borders--2px-alt">I believe in <strong>original</strong> code. This portfolio website demonstrates my <strong>raw web
+                    development ability</strong>. Feel free to check out my source code.</p>
+            <button type="button" class="btn btn--secondary btn--alt btn--large"><span>Download Portfolio
+                    Source</span></button>
+        </aside>
+
+        <section class="section section--4">
             <nav class="sidebar">
-                <div class="nav-container colour-1">
+                <div class="nav-container background-white" data-animateonscroll>
                     <div class="nav">
                         <!-- NavLinks -->
                         <ul>
@@ -159,13 +132,15 @@
                 </div>
             </nav>
             <div class="content">
-                <h1 class="h2 colour-1"><a href="https://www.linkedin.com/in/laurie-copley-ba4b43176/">linkedIn</a> is
-                    the best way to contact me</p>
+                <h1 class="h2 background-white p-normal" data-animateonscroll><a href="https://www.linkedin.com/in/laurie-copley-ba4b43176/">linkedIn</a> is
+                    the best way to contact me
                 </h1>
             </div>
         </section>
     </div>
 
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 <!--#### END Body ####-->
 

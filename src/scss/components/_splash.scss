@@ -1,0 +1,160 @@
+// $splash-box-clipping-smaller: polygon(40% 40%, 60% 40%, 60% 60%, 40% 60%);
+$splash-box-clipping-smaller: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
+
+.splash {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    &-logo {
+        z-index: 5;
+        text-align: center;
+        font-size: 26px;
+        color: $color-headings-alt;
+        opacity: 1;
+        will-change: opacity;
+        .title {
+            font-size: 1.4em;
+            a {
+                color: $color-headings-alt;
+                text-decoration: none;
+                &:visited {
+                    color: $color-headings-alt;
+                }
+                &:hover {
+                    color: $color-headings-alt;
+                }
+                &:active {
+                    color: $color-headings-alt;
+                }
+                @include underline-hover(2px, $color-headings-alt);
+            }
+        }
+        .subtitle {
+            opacity: 0;
+            font-size: 1em;
+            @include animation('on .7s ease-in forwards 1.4s');
+        }
+    }
+    &-svg {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        svg {
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+            rect {
+                width: 100%;
+                height: 100%;
+                fill: $colour-3;
+                stroke: 0;
+                -webkit-clip-path: $splash-box-clipping-smaller;
+                clip-path: $splash-box-clipping-smaller;
+                @include animation('expand 3.7s ease-in-out forwards 2.7s');
+            }
+        }
+    }
+    &-minimize {
+        position: absolute;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        svg {
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: visible;
+            backface-visibility: visible;
+            rect {
+                width: 100%;
+                height: 100%;
+                -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
+                clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh); // @include animation('scale .2s ease-out forwards 1s, hide 1.3s ease-out forwards 1.2s');
+                @include animation('scale 3s ease-in-out forwards 2s');
+            }
+        }
+    }
+}
+
+@include keyframes(scale) {
+    100% {
+        -webkit-clip-path: $splash-box-clipping-smaller;
+        clip-path: $splash-box-clipping-smaller;
+    }
+}
+
+@include keyframes(hide) {
+    100% {
+        fill: transparent;
+    }
+}
+
+@include keyframes (off) {
+    100% {
+        opacity: 0;
+    }
+}
+
+@include keyframes (on) {
+    100% {
+        opacity: 1;
+    }
+}
+
+@include keyframes (type) {
+    0% {
+        width: 0;
+    }
+}
+
+@include keyframes (type2) {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 0;
+    }
+    100% {
+        width: 100;
+    }
+}
+
+@include keyframes(expand) {
+    0% {}
+    25% {
+        -webkit-clip-path: polygon(0% 0%, 55% 40%, 55% 60%, 45% 60%);
+        clip-path: polygon(0% 0%, 55% 40%, 55% 60%, 45% 60%);
+        fill: $colour-3;
+    }
+    50% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 55% 60%, 45% 60%);
+        clip-path: polygon(0% 0%, 100% 0%, 55% 60%, 45% 60%);
+        fill: $colour-3;
+    }
+    75% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 55% 60%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0%, 55% 60%, 0% 100%);
+        fill: $colour-3;
+    }
+    100% {
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+        fill: $colour-3;
+    }
+}

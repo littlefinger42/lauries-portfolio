@@ -7,24 +7,29 @@ $font-size-h1: $font-size-base * 2;
 $font-size-nav: $font-size-base * 1.8;
 
 //Colors
-$color-1: #328095;
-$color-2: #122C34;
-$color-3: #69ddb4;
-$color-4: #dfd9c0;
-$color-5: #ef903b;
+$colour-1: #328095;
+$colour-2: #122C34;
+$colour-3: #69ddb4;
+$colour-4: #dfd9c0;
+$color-5: #C143AE;
 
 $gray-lightest: #FFFFFF;
-$gray-darkest: $color-5;
+$gray-darkest: #000000;
 
 $color-headings: $gray-darkest;
 $color-headings-alt: $gray-lightest;
-$color-text: $color-2 ;
+$color-text: $colour-2;
 $color-text-alt: $gray-lightest;
 
+$color-nav: $color-headings;
+
 //Fonts
-$font-family-headings: 'Share Tech Mono', monospace;
-$font-family-nav: 'Share Tech Mono', monospace;
-$font-family-base: 'Montserrat', sans-serif;
+$font-family-headings: 'Montserrat',
+monospace;
+$font-family-nav: 'Share Tech Mono',
+monospace;
+$font-family-base: 'Montserrat',
+sans-serif;
 
 //Borders
 $border-base: $gray-darkest solid 2px;
@@ -32,12 +37,17 @@ $border-base-alt: $gray-lightest solid 2px;
 $border-thick: black 20px solid;
 
 //Padding
-$content-padding-xs: 10px;
+$content-padding-xs: 8px;
 $content-padding-sm: $content-padding-xs * 2;
 
 //Radius
 $form-element-radius: 2px;
 
 //Layout
-$banner-height: 400px;
-$portfolio-item-height: $banner-height;
+$banner-height: 100%;
+$portfolio-item-height: 400px;
+
+//Animate on scroll
+$animation-duration: 0.5s !default;
+$animation-delay: 0s !default;
+$flip-rotate: 91deg !default;

@@ -1,0 +1,12 @@
+[data-animateonscroll] {
+    transition-duration: $animation-duration;
+    transition-delay: $animation-delay;
+	backface-visibility: hidden;
+	transition-property: transform;
+	transform: perspective(2000px) rotateY(-$flip-rotate);
+}
+
+[data-animateonscroll].animateonscroll-animate,
+body.animateonscroll-disabled [data-animateonscroll] {
+    transform: none;
+}

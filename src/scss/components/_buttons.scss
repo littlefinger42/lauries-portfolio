@@ -6,10 +6,14 @@
 	font-family: $font-family-headings;
 	border: $border-base;
 	border-radius: $form-element-radius;
+	color: $color-headings;
 	padding: 0.5em 1em;
 	&--alt {
 		border: $border-base-alt;
 		color: $color-headings-alt;
+		span {
+			@include underline-hover(2px, $color-headings-alt);	
+		}
 	}
 	&--secondary {
 		background-color: transparent;
@@ -17,7 +21,7 @@
 	&--large {
 		font-size: $font-size-h2;
 		span {
-			@include underline-hover(2px);	
+			@include underline-hover(2px, $color-headings);	
 		}
 	}
 	&:active {
@@ -25,6 +29,6 @@
 		filter: saturate(150%);
 	}
 	span {
-		@include underline-hover(1px);
+		@include underline-hover(1px, $color-headings);
 	}
 }

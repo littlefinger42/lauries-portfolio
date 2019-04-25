@@ -1,7 +1,12 @@
 .intro {
-	background: url(../img/homebg.jpg) fixed no-repeat;
+	// background: url(../img/homebg.jpg) fixed no-repeat;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	&-navigation {
+		position: absolute;
+		bottom: 32px;
+		z-index: 5;
+	}
 }

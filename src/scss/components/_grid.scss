@@ -1,10 +1,13 @@
 .section {
 	display: flex;
 	flex-wrap: wrap;
-	height: 100vh;
 	box-sizing: border-box;
+	@include responsive('sm') {
+		flex-wrap: nowrap;
+	}
 	nav,
-	article {
+	article,
+	aside {
 		flex: 1 1 100%;
 		@include responsive('sm') {
 			flex: 1 1 50%;
@@ -15,36 +18,29 @@
 		border-bottom: $border-thick;
 	}
 	&--1 {
+		height: 100vh;
 		background: repeating-linear-gradient(
-			45deg,
-			$color-5,
-			$color-5 10px,
-			$color-4 10px,
-			$color-4 20px
+			30deg,
+			white,
+			white 10px,
+			$colour-3 10px,
+			$colour-3 40px
 			) fixed;
-		nav {
-			background: url(../img/test1.svg);
-		}
 	}
 	&--2 {
-		background-color: $color-4;
-		nav {
-			background: url(../img/test1.svg);
-		}
+		background-color: $colour-4;
 	}
 	&--3 {
-		background-color: $color-1;
+		background-color: $colour-1;
 	}
 	&--4 {
-		background-color: black;
-	}
-	&--5 {
+		height: 100vh;
 		background: repeating-linear-gradient(
-			95deg,
-			$color-1,
-			$color-1 20px,
-			$color-3 20px,
-			$color-3 40px
+			60deg,
+			white,
+			white 10px,
+			$colour-2 10px,
+			$colour-2 40px
 			) fixed;
 	}
 }
@@ -53,18 +49,4 @@
 }
 .banner {
 	height: $banner-height;
-}
-
-.colour-1 {
-	background-color: $color-1;
-}
-.colour-2 {
-	background-color: $color-2;
-	color: $color-text-alt;
-}
-.colour-3 {
-	background-color: $color-3;
-}
-.colour-4 {
-	background-color: $color-4;
 }
