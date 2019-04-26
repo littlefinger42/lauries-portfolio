@@ -14,11 +14,13 @@
         font-size: $font-size-nav;
         font-family: $font-family-nav;
     }
-    article {
-        flex: 1 0 50%;
+    .portfolio-item {
+        height: auto;
         position: relative;
-        height: $portfolio-item-height;
         overflow: hidden;
+        @include responsive('sm') { 
+            height: $portfolio-item-height;
+        }
         &:after {
             content: '';
             position: absolute;
@@ -31,7 +33,6 @@
         }
         img {
             width: 100%;
-            // height: $portfolio-item-height;
         }
     }
 

@@ -8,10 +8,17 @@
 		text-align: center;
 		li {
 			display: inline;
-			padding:10px;
-			font-size: $font-size-nav;
+			padding: 4px;
+			font-size: $font-size-base * 1.2;
 			font-family: $font-family-nav;
 			color: $color-nav;
+			@include responsive('sm') {
+				padding: 8px;
+				font-size: $font-size-base * 1.4;
+			}
+			@include responsive('md') {
+				font-size: $font-size-base * 1.8;
+			}
 			a {
 				@include underline-hover(2px, $color-nav);
 				text-decoration: none;

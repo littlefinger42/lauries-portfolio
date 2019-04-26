@@ -5,6 +5,9 @@
 	@include responsive('sm') {
 		flex-wrap: nowrap;
 	}
+	article {
+		height: 100vh;
+	}
 	nav,
 	article,
 	aside {
@@ -13,30 +16,21 @@
 			flex: 1 1 50%;
 		}
 	}
-	&--border {
-		border-top: $border-thick;
-		border-bottom: $border-thick;
-	}
-	&--1 {
+	&--contact,
+	&--intro {
 		height: 100vh;
 	}
-	&--2 {
-		background-color: $colour-4;
-	}
-	&--3 {
-		background-color: $colour-1;
-	}
-	&--4 {
-		height: 100vh;
-		background: repeating-linear-gradient(
-			280deg,
-			white,
-			white 10px,
-			$colour-2 10px,
-			$colour-2 40px
-			) fixed;
+	&--intro {
+		.navigation {
+			position: absolute;
+			width: auto;
+			white-space: nowrap;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 32px;
+			z-index: 5;
+		}
 	}
 }
 .intro {
-	height: 100vh;
 }

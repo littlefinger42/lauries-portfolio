@@ -15,8 +15,11 @@
 .background-white {
   background-color: white; }
 
-.background-zigzag {
+.background-zigzag1 {
   background: repeating-linear-gradient(30deg, white, white 10px, #69ddb4 10px, #69ddb4 40px) fixed; }
+
+.background-zigzag2 {
+  background: repeating-linear-gradient(280deg, white, white 10px, #122C34 10px, #122C34 40px) fixed; }
 
 .p-small {
   padding: 4px !important; }
@@ -49,6 +52,8 @@
   @media (min-width: 768px) {
     .section {
       flex-wrap: nowrap; } }
+  .section article {
+    height: 100vh; }
   .section nav,
   .section article,
   .section aside {
@@ -58,21 +63,16 @@
       .section article,
       .section aside {
         flex: 1 1 50%; } }
-  .section--border {
-    border-top: black 20px solid;
-    border-bottom: black 20px solid; }
-  .section--1 {
+  .section--contact, .section--intro {
     height: 100vh; }
-  .section--2 {
-    background-color: #dfd9c0; }
-  .section--3 {
-    background-color: #328095; }
-  .section--4 {
-    height: 100vh;
-    background: repeating-linear-gradient(280deg, white, white 10px, #122C34 10px, #122C34 40px) fixed; }
-
-.intro {
-  height: 100vh; }
+  .section--intro .navigation {
+    position: absolute;
+    width: auto;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 32px;
+    z-index: 5; }
 
 .h1,
 .h2,
@@ -234,10 +234,17 @@ a {
     text-align: center; }
     .nav ul li {
       display: inline;
-      padding: 10px;
-      font-size: 23.4px;
+      padding: 4px;
+      font-size: 15.6px;
       font-family: "Share Tech Mono", monospace;
       color: #000000; }
+      @media (min-width: 768px) {
+        .nav ul li {
+          padding: 8px;
+          font-size: 18.2px; } }
+      @media (min-width: 992px) {
+        .nav ul li {
+          font-size: 23.4px; } }
       .nav ul li a {
         position: relative;
         text-decoration: none;
@@ -297,16 +304,6 @@ a {
   .content-border:first-child {
     border-left: 0; }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .intro-navigation {
-    position: absolute;
-    bottom: 32px;
-    z-index: 5; }
-
 .image-switcher {
   z-index: 2;
   height: 273px;
@@ -342,12 +339,14 @@ a {
     background: rgba(255, 255, 255, 0.6);
     font-size: 23.4px;
     font-family: "Share Tech Mono", monospace; }
-  .portfolio article {
-    flex: 1 0 50%;
+  .portfolio .portfolio-item {
+    height: auto;
     position: relative;
-    height: 400px;
     overflow: hidden; }
-    .portfolio article:after {
+    @media (min-width: 768px) {
+      .portfolio .portfolio-item {
+        height: 400px; } }
+    .portfolio .portfolio-item:after {
       content: '';
       position: absolute;
       left: 0;
@@ -356,7 +355,7 @@ a {
       bottom: 0;
       transition: all 0.3s;
       background: rgba(255, 255, 255, 0.4); }
-    .portfolio article img {
+    .portfolio .portfolio-item img {
       width: 100%; }
   .portfolio .btn-view:focus ~ article:after,
   .portfolio article:hover:after {
