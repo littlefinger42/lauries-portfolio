@@ -1,13 +1,16 @@
+.image-switcher,
+.image-switcher img {
+    height: 190px;
+
+    @include responsive('sm') {
+        height: 273px;
+    }
+}
+
 .image-switcher {
     z-index: 2;
+    padding: 8px;
     @include corner-borders($colour-3);
-	
-    img {
-		height: 190px;
-        @include responsive('sm') {
-            height: 273px;
-        }
-    }
 
     img:last-child {
         display: none;
