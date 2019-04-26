@@ -1,27 +1,46 @@
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-
+    .btn-view {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 0.3s;
+        @include button-reset;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.6);
+        font-size: $font-size-nav;
+        font-family: $font-family-nav;
+    }
     article {
-        height: $portfolio-item-height;
         flex: 1 0 50%;
         position: relative;
-
+        height: $portfolio-item-height;
+        overflow: hidden;
         &:after {
             content: '';
-			position: absolute;
-			left:0; right:0; top: 0; bottom: 0;
-			background: rgba(255, 255, 255, 0.4);
-			transition: all 0.3s;
-		}
-		
-		&:hover:after {
-			background: rgba(0, 0, 0, 0);
-		}
-
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            transition: all 0.3s;
+            background: rgba(255, 255, 255, 0.4);
+        }
         img {
             width: 100%;
-            height: $portfolio-item-height;
+            // height: $portfolio-item-height;
         }
+    }
+
+    .btn-view:focus ~article:after,
+    article:hover:after {
+        background: rgba(0, 0, 0, 0);
+    }
+    .btn-view:focus,
+    article:hover .btn-view {
+        opacity: 1;
     }
 }

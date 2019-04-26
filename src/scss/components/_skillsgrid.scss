@@ -1,0 +1,28 @@
+.skills-grid {
+    list-style: none;
+
+    li {
+        min-width: 100px;
+        position: relative;
+        float: left;
+        margin-right: 4px;
+
+        .title-content {
+            z-index: -1;
+
+            &:hover~.revealed-content {
+                transform: translateX(0%);
+            }
+        }
+
+        .revealed-content {
+			position: absolute;
+			top: 0;
+            transform: translateX(-100%);
+        }
+    }
+
+    .title {
+        margin-right: 32px;
+    }
+}

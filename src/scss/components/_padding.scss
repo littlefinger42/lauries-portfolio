@@ -1,24 +1,24 @@
 .p-small {
-	padding: $content-padding-xs/2;
+	padding: $content-padding-xs/2!important;
 	@include responsive('sm') {
-		padding: $content-padding-sm/2;
+		padding: $content-padding-sm/2!important;
 	}
 	@include responsive('md') {
-		padding: $content-padding-md/2;
+		padding: $content-padding-md/2!important;
 	}
 	@include responsive('lg') {
-		padding: $content-padding-lg/2;
+		padding: $content-padding-lg/2!important;
 	}
 }
 .p-normal {
-	padding: $content-padding-xs;
+	padding: $content-padding-xs!important;
 	@include responsive('sm') {
-		padding: $content-padding-sm;
+		padding: $content-padding-sm!important;
 	}
 	@include responsive('md') {
-		padding: $content-padding-md;
+		padding: $content-padding-md!important;
 	}
 	@include responsive('lg') {
-		padding: $content-padding-lg;
+		padding: $content-padding-lg!important;
 	}
 }
