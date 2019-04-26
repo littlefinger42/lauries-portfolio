@@ -1,28 +1,27 @@
-.skills-grid {
+.skills-tabs {
+    height: 100px;
     list-style: none;
+    margin: 32px 0 8px 0;
+    padding: 0;
 
     li {
+        cursor: pointer;
         min-width: 100px;
         position: relative;
         float: left;
         margin-right: 4px;
-
-        .title-content {
-            z-index: -1;
-
-            &:hover~.revealed-content {
-                transform: translateX(0%);
-            }
+        &.skills-tab-title {
+            margin-right: 16px;
         }
-
-        .revealed-content {
-			position: absolute;
-			top: 0;
-            transform: translateX(-100%);
+        &.skills-tab-item {
+            @include underline-hover(2px, $color-text);
         }
     }
-
-    .title {
-        margin-right: 32px;
+}
+.skills-tab-content {
+    display: none;
+    background-color: $colour-3;
+    &.active {
+        display: block;
     }
 }

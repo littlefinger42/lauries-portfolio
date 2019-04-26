@@ -352,7 +352,7 @@ a {
     font-size: 23.4px;
     font-family: "Share Tech Mono", monospace; }
   .portfolio .portfolio-item {
-    height: 200px;
+    max-height: 200px;
     position: relative;
     overflow: hidden; }
     @media (min-width: 768px) {
@@ -368,11 +368,7 @@ a {
       transition: all 0.3s;
       background: rgba(255, 255, 255, 0.4); }
     .portfolio .portfolio-item img {
-      height: 100%; }
-      @media (min-width: 768px) {
-        .portfolio .portfolio-item img {
-          width: 100%;
-          height: auto; } }
+      width: 100%; }
   .portfolio .btn-view:focus ~ article:after,
   .portfolio article:hover:after {
     background: rgba(0, 0, 0, 0); }
@@ -722,20 +718,44 @@ a {
 body.animateonscroll-disabled [animateonscroll] {
   transform: none; }
 
-.skills-grid {
-  list-style: none; }
-  .skills-grid li {
+.skills-tabs {
+  height: 100px;
+  list-style: none;
+  margin: 32px 0 8px 0;
+  padding: 0; }
+  .skills-tabs li {
+    cursor: pointer;
     min-width: 100px;
     position: relative;
     float: left;
     margin-right: 4px; }
-    .skills-grid li .title-content {
-      z-index: -1; }
-      .skills-grid li .title-content:hover ~ .revealed-content {
-        transform: translateX(0%); }
-    .skills-grid li .revealed-content {
-      position: absolute;
-      top: 0;
-      transform: translateX(-100%); }
-  .skills-grid .title {
-    margin-right: 32px; }
+    .skills-tabs li.skills-tab-title {
+      margin-right: 16px; }
+    .skills-tabs li.skills-tab-item {
+      position: relative; }
+      .skills-tabs li.skills-tab-item:hover:before, .skills-tabs li.skills-tab-item:focus:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1); }
+      .skills-tabs li.skills-tab-item:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #122C34;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -ms-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s; }
+
+.skills-tab-content {
+  display: none;
+  background-color: #69ddb4; }
+  .skills-tab-content.active {
+    display: block; }
