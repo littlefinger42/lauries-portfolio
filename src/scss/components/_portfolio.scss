@@ -1,12 +1,27 @@
 .portfolio {
-	display:flex;
-	flex-wrap: wrap;
-	article {
-		height: $portfolio-item-height;
-		flex: 1 0 50%;
-		img {
-			width: 100%;
-			height: $portfolio-item-height;
+    display: flex;
+    flex-wrap: wrap;
+
+    article {
+        height: $portfolio-item-height;
+        flex: 1 0 50%;
+        position: relative;
+
+        &:after {
+            content: '';
+			position: absolute;
+			left:0; right:0; top: 0; bottom: 0;
+			background: rgba(255, 255, 255, 0.4);
+			transition: all 0.3s;
 		}
-	}
+		
+		&:hover:after {
+			background: rgba(0, 0, 0, 0);
+		}
+
+        img {
+            width: 100%;
+            height: $portfolio-item-height;
+        }
+    }
 }
