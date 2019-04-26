@@ -20,7 +20,7 @@ $splash-box-clipping-smaller: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
         color: $color-headings-alt;
         opacity: 1;
         will-change: opacity;
-        .title {
+        &-title {
             font-size: 1.4em;
             a {
                 color: $color-headings-alt;
@@ -37,7 +37,7 @@ $splash-box-clipping-smaller: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
                 @include underline-hover(2px, $color-headings-alt);
             }
         }
-        .subtitle {
+        &-subtitle {
             opacity: 0;
             font-size: 1em;
             @include animation('on .7s ease-in forwards 1.4s');
@@ -64,7 +64,7 @@ $splash-box-clipping-smaller: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
                 stroke: 0;
                 -webkit-clip-path: $splash-box-clipping-smaller;
                 clip-path: $splash-box-clipping-smaller;
-                @include animation('expand 3.7s ease-in-out forwards 2.7s');
+                @include animation('expand 3.2s ease-in-out forwards 2.5s');
             }
         }
     }

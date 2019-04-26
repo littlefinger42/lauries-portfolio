@@ -409,23 +409,23 @@ a {
     color: #FFFFFF;
     opacity: 1;
     will-change: opacity; }
-    .splash-logo .title {
+    .splash-logo-title {
       font-size: 1.4em; }
-      .splash-logo .title a {
+      .splash-logo-title a {
         color: #FFFFFF;
         text-decoration: none;
         position: relative; }
-        .splash-logo .title a:visited {
+        .splash-logo-title a:visited {
           color: #FFFFFF; }
-        .splash-logo .title a:hover {
+        .splash-logo-title a:hover {
           color: #FFFFFF; }
-        .splash-logo .title a:active {
+        .splash-logo-title a:active {
           color: #FFFFFF; }
-        .splash-logo .title a:hover:before, .splash-logo .title a:focus:before {
+        .splash-logo-title a:hover:before, .splash-logo-title a:focus:before {
           visibility: visible;
           -webkit-transform: scaleX(1);
           transform: scaleX(1); }
-        .splash-logo .title a:before {
+        .splash-logo-title a:before {
           content: "";
           position: absolute;
           height: 2px;
@@ -441,7 +441,7 @@ a {
           -ms-transition: all 0.3s ease-in-out 0s;
           -o-transition: all 0.3s ease-in-out 0s;
           transition: all 0.3s ease-in-out 0s; }
-    .splash-logo .subtitle {
+    .splash-logo-subtitle {
       opacity: 0;
       font-size: 1em;
       -webkit-animation: on .7s ease-in forwards 1.4s;
@@ -469,10 +469,10 @@ a {
         stroke: 0;
         -webkit-clip-path: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
         clip-path: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
-        -webkit-animation: expand 3.7s ease-in-out forwards 2.7s;
-        -moz-animation: expand 3.7s ease-in-out forwards 2.7s;
-        -o-animation: expand 3.7s ease-in-out forwards 2.7s;
-        animation: expand 3.7s ease-in-out forwards 2.7s; }
+        -webkit-animation: expand 3.2s ease-in-out forwards 2.5s;
+        -moz-animation: expand 3.2s ease-in-out forwards 2.5s;
+        -o-animation: expand 3.2s ease-in-out forwards 2.5s;
+        animation: expand 3.2s ease-in-out forwards 2.5s; }
   .splash-minimize {
     position: absolute;
     margin: auto;
