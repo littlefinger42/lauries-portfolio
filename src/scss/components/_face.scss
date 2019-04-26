@@ -1,16 +1,25 @@
 .image-switcher {
-	z-index: 2;
-	height:273px;
-	@include corner-borders($colour-3);
-	img:last-child {
-		display: none;
-	}
-	&:hover {
-		img:first-child {
-			display: none;
-		}
-		img:last-child {
-			display: block;
-		}
-	}
+    z-index: 2;
+    @include corner-borders($colour-3);
+	
+    img {
+		height: 190px;
+        @include responsive('sm') {
+            height: 273px;
+        }
+    }
+
+    img:last-child {
+        display: none;
+    }
+
+    &:hover {
+        img:first-child {
+            display: none;
+        }
+
+        img:last-child {
+            display: block;
+        }
+    }
 }

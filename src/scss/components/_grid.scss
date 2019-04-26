@@ -5,15 +5,20 @@
 	@include responsive('sm') {
 		flex-wrap: nowrap;
 	}
-	article {
-		height: 100vh;
-	}
 	nav,
 	article,
 	aside {
 		flex: 1 1 100%;
 		@include responsive('sm') {
 			flex: 1 1 50%;
+		}
+	}
+	&--bio article {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		.background-white {
+			flex-grow: 1;
 		}
 	}
 	&--contact,
@@ -31,6 +36,4 @@
 			z-index: 5;
 		}
 	}
-}
-.intro {
 }
