@@ -11,7 +11,7 @@
 	&--alt {
 		border: $border-base-alt;
 		color: $colour-headings-alt;
-		span {
+		span, a {
 			@include underline-hover(2px, $colour-headings-alt);	
 		}
 	}
@@ -20,7 +20,7 @@
 	}
 	&--large {
 		font-size: $font-size-h2;
-		span {
+		span, a {
 			@include underline-hover(2px, $colour-headings);	
 		}
 	}
@@ -28,7 +28,8 @@
 		transform: translateY(1px);
 		filter: saturate(150%);
 	}
-	span {
+	span, a {
+		text-decoration: none;
 		@include underline-hover(1px, $colour-headings);
 	}
 }
