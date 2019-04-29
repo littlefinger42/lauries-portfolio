@@ -12,7 +12,7 @@ var config = {
       html: "./src/*.html",
       js: "./src/js/*.js",
       sass: "./src/scss/**/*.scss",
-      assets: "./assets/*"
+      assets: "./assets/**"
     },
     dist: {
 		html: "./dist",
