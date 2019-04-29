@@ -1,10 +1,9 @@
-(function() {
-  const portfolioItems = [
+window.portfolioItems = [
     {
       title: "Laura's Portfolio",
       desc:
-        "My girlfriend, Laura Stout, is a professional animator and illustrator. She needed a website to help her apply for animation work. Using aspects from her animation portfolio, we create a beautiful yet simple design with parralex features. Due to the simplicity of Laura's site and the lack of operations, I was able to choose a static site generation library. The framework which I chose was Gatsby with React. Using Netlify's CMS and graphQL queries, I was able to build a system in which Laura can edit and add additional content. For styling I chose styled-components as it is a logical choice with Gatsby, component driven design.",
-      url: "laurastout.com",
+        "Laura Stout is a professional animator and illustrator. She needed a website to help her find new animation projects. Using influence and aspects of her previous work, we worked together to create a beautiful yet simple design with correctly represented her. Due to the simplicity of Laura's site and the lack of operations, a web application framework wasn't requried. Instead I took the opportunity to delve into static site generation with Gatsby and React. Using Netlify's CMS and graphQL queries, I was able to build a system in which Laura can edit and add additional content. For styling I chose styled-components as it is a logical choice with Gatsby, component driven design.",
+      url: "https://laurastout.com/",
       date: "April 2019",
       live: true,
       background: {
@@ -109,48 +108,3 @@
       }
     }
   ];
-
-  const parsedUrl = new URL(window.location.href);
-
-  if (parsedUrl.pathname === '/') {
-    const portfolioContainer = document.getElementById('sectPortfolio');
-    for (var i = 0; i < portfolioItems.length; i++) {
-      var article = document.createElement('article');
-      article.classList.add('portfolio-item')
-      article.setAttribute("id", portfolioItems[i].background.src);
-      portfolioContainer.appendChild(article);
-      if (portfolioItems[i].background.type==="video") {
-        var videoElement = document.createElement('video');
-        videoElement.setAttribute("autoplay", true);
-        videoElement.setAttribute("loop", true);
-        videoElement.muted = true;
-        var sourceElementMp4 = document.createElement('source');
-        sourceElementMp4.setAttribute('type', 'video/mp4');
-        sourceElementMp4.src = "videos/port/" + portfolioItems[i].background.src + ".mp4";
-        var sourceElementWebm = document.createElement('source');
-        sourceElementWebm.setAttribute('type', 'video/webm');
-        sourceElementWebm.src = "videos/port/" + portfolioItems[i].background.src + ".webm";
-        videoElement.appendChild(sourceElementMp4);
-        videoElement.appendChild(sourceElementWebm);
-        article.appendChild(videoElement);
-      } else if (portfolioItems[i].background.type==="img") {
-        var imgElement = document.createElement('img');
-        imgElement.src = "img/port/" + portfolioItems[i].background.src + ".jpg";
-        imgElement.alt = portfolioItems[i].title + " portfolio image";
-        article.appendChild(imgElement);
-      }
-      var buttonLink = document.createElement('a');
-      buttonLink.textContent = "View " + portfolioItems[i].title;
-      buttonLink.href = "/portfolio.html?id=" + portfolioItems[i].background.src;
-      buttonLink.classList.add('btn-view', 'p-small');
-      buttonLink.classList.add('btn-view', 'p-small');
-      article.appendChild(buttonLink);
-    }
-  } else if (parsedUrl.pathname === '/portfolio.html') {
-    console.log('on portfolio page0');
-  }
-console.log(parsedUrl.pathname);
-  if (parsedUrl.searchParams) {
-    console.log(parsedUrl.searchParams.get("portfolioItem")); // 123
-  }
-})();

@@ -1,8 +1,13 @@
-.h1, h1,
-.h2, h2,
-.h3, h3,
-.h4, h4,
-.h5, h5 {
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5 {
     color: $colour-headings;
     font-family: $font-family-headings;
 
@@ -25,9 +30,11 @@ h1 {
     @include responsive(sm) {
         font-size: 1.4em;
     }
+
     @include responsive(md) {
         font-size: 1.8em;
     }
+
     @include responsive(lg) {
         font-size: 2em;
     }
@@ -51,4 +58,10 @@ a {
         color: $colour-text;
         text-decoration: none;
     }
+}
+
+.date {
+    color: $colour-text-lighter;
+    font-style: italic;
+    font-size: $font-size-base * 0.9;
 }

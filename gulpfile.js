@@ -11,6 +11,8 @@ var config = {
     src: {
       html: "./src/*.html",
       js: "./src/js/*.js",
+      jsMain: ["./src/js/animateonscroll.js", "./src/js/portfolioitems.js", "./src/js/main.js"],
+      jsPortfolio: ["./src/js/animateonscroll.js", "./src/js/portfolioitems.js", "./src/js/portfolioitem.js"],
       sass: "./src/scss/**/*.scss",
       assets: "./assets/**"
     },
@@ -34,10 +36,16 @@ gulp.task("sass", () => {
     );
 });
 
-gulp.task("js", () => {
+gulp.task("js:main", () => {
   return gulp
-    .src(config.paths.src.js)
+    .src(config.paths.src.jsMain)
     .pipe(gulp_concat("main.js"))
+    .pipe(gulp.dest(config.paths.dist.js));
+});
+gulp.task("js:portfolioitem", () => {
+  return gulp
+    .src(config.paths.src.jsPortfolio)
+    .pipe(gulp_concat("portfolioitem.js"))
     .pipe(gulp.dest(config.paths.dist.js));
 });
 
@@ -68,10 +76,10 @@ gulp.task("copyAssets", () => {
 gulp.task("watch", () => {
   gulp.parallel("browserSync", "build");
   gulp.watch(config.paths.src.sass, gulp.series("sass"));
-  gulp.watch(config.paths.src.js, gulp.series("js"));
+  gulp.watch(config.paths.src.js, gulp.series("js:main", "js:portfolioitem"));
   gulp.watch(config.paths.src.assets, gulp.series("copyAssets"));
   gulp.watch(config.paths.src.html, gulp.series("html"));
 });
 
-gulp.task("build", gulp.parallel("sass", "js", "html", "copyAssets"));
+gulp.task("build", gulp.parallel("sass", "js:main", "js:portfolioitem", "html", "copyAssets"));
 gulp.task("develop", gulp.parallel("browserSync", "build", "watch"));

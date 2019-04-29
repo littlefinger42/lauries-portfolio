@@ -16,6 +16,7 @@ $gray-darkest: $colour-secondary;
 $colour-headings: $colour-secondary;
 $colour-headings-alt: $gray-lightest;
 $colour-text: $colour-secondary;
+$colour-text-lighter: lighten($colour-text, 20%);
 $colour-text-alt: $gray-lightest;
 
 $colour-nav: $colour-headings;
