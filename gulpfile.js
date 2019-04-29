@@ -60,9 +60,11 @@ gulp.task("browserSync", () => {
 });
 
 gulp.task("watch", () => {
-  gulp.series("browserSync");
+  gulp.parallel("browserSync", "build");
   gulp.watch(config.paths.src.sass, gulp.series("sass"));
   gulp.watch(config.paths.src.js, gulp.series("js"));
   gulp.watch(config.paths.src.html, gulp.series("html"));
-  // Other watchers
 });
+
+gulp.task("build", gulp.parallel("sass", "js", "html"));
+gulp.task("develop", gulp.parallel("browserSync", "build", "watch"));
