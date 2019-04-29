@@ -11,7 +11,8 @@ var config = {
     src: {
       html: "./src/*.html",
       js: "./src/js/*.js",
-      sass: "./src/scss/**/*.scss"
+      sass: "./src/scss/**/*.scss",
+      assets: "./assets/*"
     },
     dist: {
 		html: "./dist",
@@ -59,12 +60,18 @@ gulp.task("browserSync", () => {
   });
 });
 
+gulp.task("copyAssets", () => {
+  return gulp.src(config.paths.src.assets)
+  .pipe(gulp.dest(config.paths.dist.html));
+});
+
 gulp.task("watch", () => {
   gulp.parallel("browserSync", "build");
   gulp.watch(config.paths.src.sass, gulp.series("sass"));
   gulp.watch(config.paths.src.js, gulp.series("js"));
+  gulp.watch(config.paths.src.assets, gulp.series("copyAssets"));
   gulp.watch(config.paths.src.html, gulp.series("html"));
 });
 
-gulp.task("build", gulp.parallel("sass", "js", "html"));
+gulp.task("build", gulp.parallel("sass", "js", "html", "copyAssets"));
 gulp.task("develop", gulp.parallel("browserSync", "build", "watch"));
