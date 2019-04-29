@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Laurie Copley" />
-    <meta name="description" content="Laurie Copley' Web Design Portfolio" />
+    <meta name="description" content="Laurie Copley' Web Development Portfolio" />
     <meta
       name="keywords"
-      content="Laurie,Copley,Web Design,Portfolio,Front,End,Web,Design"
+      content="Laurie,Copley,Web Design,Portfolio,Front,End,Web,Design,Development"
     />
     <meta
       name="viewport"
@@ -83,7 +83,7 @@
         <div class="navigation">
           <div class="nav">
             <ul>
-              <li><a href="#sectAbout">About</a></li>
+              <li><a href="#sectBio">About</a></li>
               <li><b>-</b></li>
               <li><a href="#sectPortfolio">Portfolio</a></li>
               <li><b>-</b></li>
@@ -93,7 +93,7 @@
         </div>
       </section>
 
-      <section class="section section--bio">
+      <section id="sectBio" class="section section--bio">
         <article>
           <div class="content background-zigzag1 p-normal">
             <div class="background-3 p-small" animateonscroll>
@@ -148,9 +148,9 @@
                 archecture. Towards the end of my employment at ISAAC we started
                 migrating the application to <strong>React</strong>. I have
                 experience using React in various different applications: Large
-                web applications, Static generated sites (Gatsby) and Mobile Apps with
-                React Native. I explored <strong>VueJs</strong> with personal
-                study projects.
+                web applications, Static generated sites (Gatsby) and Mobile
+                Apps with React Native. I explored <strong>VueJs</strong> with
+                personal study projects.
               </div>
               <ul class="skills-tabs" animateonscroll>
                 <li class="h2 background-3 p-small skills-tab-title">
@@ -237,16 +237,12 @@
         </a>
       </footer>
 
-      <section class="section portfolio">
+      <section id="sectPortfolio" class="section portfolio">
         <article class="portfolio-item">
           <video alt="Brand remastered background video" autoplay loop muted>
-            <source type="video/mp4"src="videos/port/brand.mp4"/>
-            <source type="video/webm"src="videos/port/brand.webm"/>
+            <source type="video/webm" src="videos/port/brand.webm" />
+            <source type="video/mp4" src="videos/port/brand.mp4" />
           </video>
-          <button class="btn-view p-small">View</button>
-        </article>
-        <article class="portfolio-item">
-          <img src="img/port/albany.jpg" alt="Albany house portfolio image" />
           <button class="btn-view p-small">View</button>
         </article>
         <article class="portfolio-item">
@@ -268,6 +264,13 @@
           <button class="btn-view p-small">View</button>
         </article>
         <article class="portfolio-item">
+          <video alt="Albion band background video" autoplay loop muted>
+            <source type="video/webm" src="videos/port/albion.webm" />
+            <source type="video/mp4" src="videos/port/albion.mp4" />
+          </video>
+          <button class="btn-view p-small">View</button>
+        </article>
+        <article class="portfolio-item">
           <img src="img/port/reviews.jpg" alt="Albany house portfolio image" />
           <button class="btn-view p-small">View</button>
         </article>
@@ -276,11 +279,18 @@
           <button class="btn-view p-small">View</button>
         </article>
         <article class="portfolio-item">
-          <img src="img/port/balloon.jpg" alt="Albany house portfolio image" />
+          <img src="img/port/startup.jpg" alt="Albany house portfolio image" />
           <button class="btn-view p-small">View</button>
         </article>
         <article class="portfolio-item">
-          <img src="img/port/startup.jpg" alt="Albany house portfolio image" />
+          <img src="img/port/albany.jpg" alt="Albany house portfolio image" />
+          <button class="btn-view p-small">View</button>
+        </article>
+        <article class="portfolio-item">
+          <video alt="Balloon pins background video" autoplay loop muted>
+            <source type="video/webm" src="videos/port/balloon.webm" />
+            <source type="video/mp4" src="videos/port/balloon.mp4" />
+          </video>
           <button class="btn-view p-small">View</button>
         </article>
       </section>
@@ -297,7 +307,7 @@
         </button> -->
       </div>
 
-      <section class="section section--contact background-zigzag2">
+      <section id="sectContact" class="section section--contact background-zigzag2">
         <nav class="sidebar">
           <div class="nav-container background-white" animateonscroll>
             <div class="nav">
