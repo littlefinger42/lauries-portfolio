@@ -426,11 +426,13 @@ th {
       .section aside {
         flex: 1 1 50%; } }
   .section--bio article {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column; }
     .section--bio article .background-white {
       flex-grow: 1; }
+    .section--bio article .tagline {
+      padding: 64px 0; }
   .section--contact, .section--intro {
     height: 100vh; }
   .section--intro .navigation {
@@ -518,13 +520,13 @@ a {
   .btn--alt {
     border: #FFFFFF solid 2px;
     color: #FFFFFF; }
-    .btn--alt span {
+    .btn--alt span, .btn--alt a {
       position: relative; }
-      .btn--alt span:hover:before, .btn--alt span:focus:before {
+      .btn--alt span:hover:before, .btn--alt span:focus:before, .btn--alt a:hover:before, .btn--alt a:focus:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
         transform: scaleX(1); }
-      .btn--alt span:before {
+      .btn--alt span:before, .btn--alt a:before {
         content: "";
         position: absolute;
         height: 2px;
@@ -544,13 +546,13 @@ a {
     background-color: transparent; }
   .btn--large {
     font-size: 20.8px; }
-    .btn--large span {
+    .btn--large span, .btn--large a {
       position: relative; }
-      .btn--large span:hover:before, .btn--large span:focus:before {
+      .btn--large span:hover:before, .btn--large span:focus:before, .btn--large a:hover:before, .btn--large a:focus:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
         transform: scaleX(1); }
-      .btn--large span:before {
+      .btn--large span:before, .btn--large a:before {
         content: "";
         position: absolute;
         height: 2px;
@@ -569,13 +571,14 @@ a {
   .btn:active {
     transform: translateY(1px);
     filter: saturate(150%); }
-  .btn span {
+  .btn span, .btn a {
+    text-decoration: none;
     position: relative; }
-    .btn span:hover:before, .btn span:focus:before {
+    .btn span:hover:before, .btn span:focus:before, .btn a:hover:before, .btn a:focus:before {
       visibility: visible;
       -webkit-transform: scaleX(1);
       transform: scaleX(1); }
-    .btn span:before {
+    .btn span:before, .btn a:before {
       content: "";
       position: absolute;
       height: 1px;

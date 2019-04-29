@@ -14,11 +14,14 @@
 		}
 	}
 	&--bio article {
-		height: 100vh;
+		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
 		.background-white {
 			flex-grow: 1;
+		}
+		.tagline {
+			padding: $content-padding-lg 0;
 		}
 	}
 	&--contact,
