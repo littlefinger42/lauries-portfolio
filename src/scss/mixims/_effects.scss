@@ -58,7 +58,7 @@
 }
 
 
-@mixin corner-borders ($cornerColor: #000, $cornerSize: 20, $cornerThickness: 5, $contentFontSize: 16) {
+@mixin corner-borders ($cornerColor: $colour-secondary, $cornerSize: 20, $cornerThickness: 5, $contentFontSize: 16) {
   //   - $cornerSize - just a number in pixels without unit or wit any unit you want 
   //                 - when just a number is provided relative mode i used (will be vconverted into em)
   //                 - when number with unit is absolute mode is turned on (the unit will remain)

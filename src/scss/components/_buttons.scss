@@ -6,13 +6,13 @@
 	font-family: $font-family-headings;
 	border: $border-base;
 	border-radius: $form-element-radius;
-	color: $color-headings;
+	color: $colour-headings;
 	padding: 0.5em 1em;
 	&--alt {
 		border: $border-base-alt;
-		color: $color-headings-alt;
+		color: $colour-headings-alt;
 		span {
-			@include underline-hover(2px, $color-headings-alt);	
+			@include underline-hover(2px, $colour-headings-alt);	
 		}
 	}
 	&--secondary {
@@ -21,7 +21,7 @@
 	&--large {
 		font-size: $font-size-h2;
 		span {
-			@include underline-hover(2px, $color-headings);	
+			@include underline-hover(2px, $colour-headings);	
 		}
 	}
 	&:active {
@@ -29,6 +29,6 @@
 		filter: saturate(150%);
 	}
 	span {
-		@include underline-hover(1px, $color-headings);
+		@include underline-hover(1px, $colour-headings);
 	}
 }

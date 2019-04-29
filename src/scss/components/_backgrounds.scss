@@ -1,0 +1,28 @@
+.background-primary {
+	background-color: $colour-primary;
+}
+.background-secondary {
+	background-color: $colour-secondary;
+	color: $colour-text-alt;
+}
+.background-white {
+	background-color: white;
+}
+.background-zigzag1 {
+	background: repeating-linear-gradient(
+		30deg,
+		white,
+		white 10px,
+		$colour-primary 10px,
+		$colour-primary 40px
+		) fixed;
+}
+.background-zigzag2 {
+	background: repeating-linear-gradient(
+		280deg,
+		white,
+		white 10px,
+		$colour-secondary 10px,
+		$colour-secondary 40px
+		) fixed;
+}

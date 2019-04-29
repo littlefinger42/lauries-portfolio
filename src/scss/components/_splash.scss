@@ -17,25 +17,25 @@ $splash-box-clipping-smaller: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
         z-index: 5;
         text-align: center;
         font-size: 26px;
-        color: $color-headings-alt;
+        color: $colour-headings-alt;
         opacity: 1;
         will-change: opacity;
-        &-title {
-            font-size: 1.4em;
-            a {
-                color: $color-headings-alt;
-                text-decoration: none;
-                &:visited {
-                    color: $color-headings-alt;
-                }
-                &:hover {
-                    color: $color-headings-alt;
-                }
-                &:active {
-                    color: $color-headings-alt;
-                }
-                @include underline-hover(2px, $color-headings-alt);
+        &-title a, &-subtitle {
+            color: $colour-headings-alt;
+            text-decoration: none;
+            &:visited {
+                color: $colour-headings-alt;
             }
+            &:hover {
+                color: $colour-headings-alt;
+            }
+            &:active {
+                color: $colour-headings-alt;
+            }
+        }
+        &-title a {
+            font-size: 1.4em;
+            @include underline-hover(2px, $colour-headings-alt);
         }
         &-subtitle {
             opacity: 0;
@@ -60,15 +60,18 @@ $splash-box-clipping-smaller: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
             rect {
                 width: 100%;
                 height: 100%;
-                fill: $colour-3;
+                fill: $colour-primary;
                 stroke: 0;
                 -webkit-clip-path: $splash-box-clipping-smaller;
                 clip-path: $splash-box-clipping-smaller;
-                @include animation('expand 3.2s ease-in-out forwards 2.5s');
+                @include animation('expand 1.5s ease-in-out forwards 2.5s');
+                @include responsive('sm') {
+                    @include animation('expand 3.2s ease-in-out forwards 2.5s');
+                }
             }
         }
     }
-    &-minimize {
+    &-shape {
         position: absolute;
         margin: auto;
         width: 100%;
@@ -84,9 +87,13 @@ $splash-box-clipping-smaller: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
             rect {
                 width: 100%;
                 height: 100%;
+                fill: $colour-secondary;
                 -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
-                clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh); // @include animation('scale .2s ease-out forwards 1s, hide 1.3s ease-out forwards 1.2s');
+                clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
                 @include animation('scale 3s ease-in-out forwards 2s');
+                @include responsive('sm') {
+                    @include animation('scale 3s ease-in-out forwards 2s');
+                }
             }
         }
     }
@@ -140,21 +147,21 @@ $splash-box-clipping-smaller: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
     25% {
         -webkit-clip-path: polygon(0% 0%, 55% 40%, 55% 60%, 45% 60%);
         clip-path: polygon(0% 0%, 55% 40%, 55% 60%, 45% 60%);
-        fill: $colour-3;
+        fill: $colour-primary;
     }
     50% {
         -webkit-clip-path: polygon(0% 0%, 100% 0%, 55% 60%, 45% 60%);
         clip-path: polygon(0% 0%, 100% 0%, 55% 60%, 45% 60%);
-        fill: $colour-3;
+        fill: $colour-primary;
     }
     75% {
         -webkit-clip-path: polygon(0% 0%, 100% 0%, 55% 60%, 0% 100%);
         clip-path: polygon(0% 0%, 100% 0%, 55% 60%, 0% 100%);
-        fill: $colour-3;
+        fill: $colour-primary;
     }
     100% {
         -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-        fill: $colour-3;
+        fill: $colour-primary;
     }
 }

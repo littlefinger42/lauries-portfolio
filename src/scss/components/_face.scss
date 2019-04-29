@@ -10,7 +10,7 @@
 .image-switcher {
     z-index: 2;
     padding: 8px;
-    @include corner-borders($colour-3);
+    @include corner-borders($colour-primary);
 
     img:last-child {
         display: none;

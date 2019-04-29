@@ -369,18 +369,12 @@ td,
 th {
   padding: 0; }
 
-.background-1 {
-  background-color: #328095; }
-
-.background-2 {
-  background-color: #122C34;
-  color: #FFFFFF; }
-
-.background-3 {
+.background-primary {
   background-color: #69ddb4; }
 
-.background-4 {
-  background-color: #dfd9c0; }
+.background-secondary {
+  background-color: #122C34;
+  color: #FFFFFF; }
 
 .background-white {
   background-color: white; }
@@ -448,42 +442,42 @@ th {
     bottom: 32px;
     z-index: 5; }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5 {
-  color: #000000;
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5 {
+  color: #122C34;
   font-family: "Montserrat", monospace; }
-  .h1 a,
-  .h2 a,
-  .h3 a,
-  .h4 a,
-  .h5 a {
-    color: #000000; }
-    .h1 a:visited, .h1 a:hover, .h1 a:focus,
+  .h1 a, h1 a,
+  .h2 a, h2 a,
+  .h3 a, h3 a,
+  .h4 a, h4 a,
+  .h5 a, h5 a {
+    color: #122C34; }
+    .h1 a:visited, .h1 a:hover, .h1 a:focus, h1 a:visited, h1 a:hover, h1 a:focus,
     .h2 a:visited,
     .h2 a:hover,
-    .h2 a:focus,
+    .h2 a:focus, h2 a:visited, h2 a:hover, h2 a:focus,
     .h3 a:visited,
     .h3 a:hover,
-    .h3 a:focus,
+    .h3 a:focus, h3 a:visited, h3 a:hover, h3 a:focus,
     .h4 a:visited,
     .h4 a:hover,
-    .h4 a:focus,
+    .h4 a:focus, h4 a:visited, h4 a:hover, h4 a:focus,
     .h5 a:visited,
     .h5 a:hover,
-    .h5 a:focus {
-      color: #000000;
+    .h5 a:focus, h5 a:visited, h5 a:hover, h5 a:focus {
+      color: #122C34;
       text-decoration: none; }
 
 .h1,
 h1 {
-  font-size: 1.5em; }
+  font-size: 1.2em; }
   @media (min-width: 768px) {
     .h1,
     h1 {
-      font-size: 1.6em; } }
+      font-size: 1.4em; } }
   @media (min-width: 992px) {
     .h1,
     h1 {
@@ -517,9 +511,9 @@ a {
   text-align: center;
   text-decoration: none;
   font-family: "Montserrat", monospace;
-  border: #000000 solid 2px;
+  border: #122C34 solid 2px;
   border-radius: 2px;
-  color: #000000;
+  color: #122C34;
   padding: 0.5em 1em; }
   .btn--alt {
     border: #FFFFFF solid 2px;
@@ -563,7 +557,7 @@ a {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #000000;
+        background-color: #122C34;
         visibility: hidden;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
@@ -588,7 +582,7 @@ a {
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: #000000;
+      background-color: #122C34;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
@@ -599,7 +593,7 @@ a {
       transition: all 0.3s ease-in-out 0s; }
 
 .nav {
-  border: #000000 solid 2px;
+  border: #122C34 solid 2px;
   padding: 4px; }
   .nav ul {
     margin: 0;
@@ -611,7 +605,7 @@ a {
       padding: 4px;
       font-size: 15.6px;
       font-family: "Share Tech Mono", monospace;
-      color: #000000; }
+      color: #122C34; }
       @media (min-width: 768px) {
         .nav ul li {
           padding: 8px;
@@ -622,7 +616,7 @@ a {
       .nav ul li a {
         position: relative;
         text-decoration: none;
-        color: #000000; }
+        color: #122C34; }
         .nav ul li a:hover:before, .nav ul li a:focus:before {
           visibility: visible;
           -webkit-transform: scaleX(1);
@@ -634,7 +628,7 @@ a {
           bottom: 0;
           left: 0;
           right: 0;
-          background-color: #000000;
+          background-color: #122C34;
           visibility: hidden;
           -webkit-transform: scaleX(0);
           transform: scaleX(0);
@@ -668,15 +662,6 @@ a {
     justify-content: space-between; }
   .content--space-around {
     justify-content: space-around; }
-
-.content-border {
-  box-sizing: border-box;
-  border-right: black 10px solid;
-  border-left: black 10px solid; }
-  .content-border:last-child {
-    border-right: 0; }
-  .content-border:first-child {
-    border-left: 0; }
 
 .image-switcher,
 .image-switcher img {
@@ -761,9 +746,6 @@ a {
   min-height: 1em;
   height: 100%;
   z-index: 2; }
-  .footer .corner-borders--2px {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; }
   .footer svg {
     height: 1.6rem; }
 
@@ -786,38 +768,38 @@ a {
     color: #FFFFFF;
     opacity: 1;
     will-change: opacity; }
-    .splash-logo-title {
-      font-size: 1.4em; }
-      .splash-logo-title a {
-        color: #FFFFFF;
-        text-decoration: none;
-        position: relative; }
-        .splash-logo-title a:visited {
-          color: #FFFFFF; }
-        .splash-logo-title a:hover {
-          color: #FFFFFF; }
-        .splash-logo-title a:active {
-          color: #FFFFFF; }
-        .splash-logo-title a:hover:before, .splash-logo-title a:focus:before {
-          visibility: visible;
-          -webkit-transform: scaleX(1);
-          transform: scaleX(1); }
-        .splash-logo-title a:before {
-          content: "";
-          position: absolute;
-          height: 2px;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background-color: #FFFFFF;
-          visibility: hidden;
-          -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-          -webkit-transition: all 0.3s ease-in-out 0s;
-          -moz-transition: all 0.3s ease-in-out 0s;
-          -ms-transition: all 0.3s ease-in-out 0s;
-          -o-transition: all 0.3s ease-in-out 0s;
-          transition: all 0.3s ease-in-out 0s; }
+    .splash-logo-title a, .splash-logo-subtitle {
+      color: #FFFFFF;
+      text-decoration: none; }
+      .splash-logo-title a:visited, .splash-logo-subtitle:visited {
+        color: #FFFFFF; }
+      .splash-logo-title a:hover, .splash-logo-subtitle:hover {
+        color: #FFFFFF; }
+      .splash-logo-title a:active, .splash-logo-subtitle:active {
+        color: #FFFFFF; }
+    .splash-logo-title a {
+      font-size: 1.4em;
+      position: relative; }
+      .splash-logo-title a:hover:before, .splash-logo-title a:focus:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1); }
+      .splash-logo-title a:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -ms-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s; }
     .splash-logo-subtitle {
       opacity: 0;
       font-size: 1em;
@@ -846,11 +828,17 @@ a {
         stroke: 0;
         -webkit-clip-path: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
         clip-path: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
-        -webkit-animation: expand 3.2s ease-in-out forwards 2.5s;
-        -moz-animation: expand 3.2s ease-in-out forwards 2.5s;
-        -o-animation: expand 3.2s ease-in-out forwards 2.5s;
-        animation: expand 3.2s ease-in-out forwards 2.5s; }
-  .splash-minimize {
+        -webkit-animation: expand 1.5s ease-in-out forwards 2.5s;
+        -moz-animation: expand 1.5s ease-in-out forwards 2.5s;
+        -o-animation: expand 1.5s ease-in-out forwards 2.5s;
+        animation: expand 1.5s ease-in-out forwards 2.5s; }
+        @media (min-width: 768px) {
+          .splash-svg svg rect {
+            -webkit-animation: expand 3.2s ease-in-out forwards 2.5s;
+            -moz-animation: expand 3.2s ease-in-out forwards 2.5s;
+            -o-animation: expand 3.2s ease-in-out forwards 2.5s;
+            animation: expand 3.2s ease-in-out forwards 2.5s; } }
+  .splash-shape {
     position: absolute;
     margin: auto;
     width: 100%;
@@ -858,20 +846,27 @@ a {
     top: 0;
     left: 0;
     z-index: 4; }
-    .splash-minimize svg {
+    .splash-shape svg {
       width: 100%;
       height: 100%;
       -webkit-backface-visibility: visible;
       backface-visibility: visible; }
-      .splash-minimize svg rect {
+      .splash-shape svg rect {
         width: 100%;
         height: 100%;
+        fill: #122C34;
         -webkit-clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
         clip-path: polygon(0vw 0vh, 100vw 0vh, 100vw 100vh, 0vw 100vh);
         -webkit-animation: scale 3s ease-in-out forwards 2s;
         -moz-animation: scale 3s ease-in-out forwards 2s;
         -o-animation: scale 3s ease-in-out forwards 2s;
         animation: scale 3s ease-in-out forwards 2s; }
+        @media (min-width: 768px) {
+          .splash-shape svg rect {
+            -webkit-animation: scale 3s ease-in-out forwards 2s;
+            -moz-animation: scale 3s ease-in-out forwards 2s;
+            -o-animation: scale 3s ease-in-out forwards 2s;
+            animation: scale 3s ease-in-out forwards 2s; } }
 
 @-webkit-keyframes scale {
   100% {
@@ -1065,14 +1060,11 @@ a {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     fill: #69ddb4; } }
 
-.icon-font {
-  height: 0.9em; }
-
 .corner-borders--2px {
   padding: 16px;
   border-style: solid;
   border-width: 0.125em;
-  border-image-source: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox=%220 0 40 40%22%3E%3Crect x=%221%22 y=%221%22 width=%2238%22 height=%2238%22 fill=%22transparent%22 stroke=%22%23000000%22 stroke-width=%222%22 %2F%3E%3C%2Fsvg%3E");
+  border-image-source: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 viewBox=%220 0 40 40%22%3E%3Crect x=%221%22 y=%221%22 width=%2238%22 height=%2238%22 fill=%22transparent%22 stroke=%22%23122C34%22 stroke-width=%222%22 %2F%3E%3C%2Fsvg%3E");
   border-image-slice: 50%;
   border-image-width: 1.25em; }
 

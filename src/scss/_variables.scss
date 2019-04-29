@@ -7,21 +7,18 @@ $font-size-h1: $font-size-base * 2;
 $font-size-nav: $font-size-base * 1.8;
 
 //Colors
-$colour-1: #328095;
-$colour-2: #122C34;
-$colour-3: #69ddb4;
-$colour-4: #dfd9c0;
-$color-5: #C143AE;
+$colour-primary: #69ddb4; 
+$colour-secondary: #122C34; 
 
 $gray-lightest: #FFFFFF;
-$gray-darkest: #000000;
+$gray-darkest: $colour-secondary;
 
-$color-headings: $gray-darkest;
-$color-headings-alt: $gray-lightest;
-$color-text: $colour-2;
-$color-text-alt: $gray-lightest;
+$colour-headings: $colour-secondary;
+$colour-headings-alt: $gray-lightest;
+$colour-text: $colour-secondary;
+$colour-text-alt: $gray-lightest;
 
-$color-nav: $color-headings;
+$colour-nav: $colour-headings;
 
 //Fonts
 $font-family-headings: 'Montserrat',

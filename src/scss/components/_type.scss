@@ -1,18 +1,18 @@
-.h1,
-.h2,
-.h3,
-.h4,
-.h5 {
-    color: $color-headings;
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5 {
+    color: $colour-headings;
     font-family: $font-family-headings;
 
     a {
-        color: $color-headings;
+        color: $colour-headings;
 
         &:visited,
         &:hover,
         &:focus {
-            color: $color-headings;
+            color: $colour-headings;
             text-decoration: none;
         }
     }
@@ -20,16 +20,14 @@
 
 .h1,
 h1 {
-    font-size: 1.5em;
+    font-size: 1.2em;
 
     @include responsive(sm) {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
-
     @include responsive(md) {
         font-size: 1.8em;
     }
-
     @include responsive(lg) {
         font-size: 2em;
     }
@@ -45,12 +43,12 @@ p {
 }
 
 a {
-    color: $color-text;
+    color: $colour-text;
 
     &:visited,
     &:hover,
     &:focus {
-        color: $color-text;
+        color: $colour-text;
         text-decoration: none;
     }
 }

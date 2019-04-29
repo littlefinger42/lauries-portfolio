@@ -10,15 +10,3 @@
 		justify-content: space-around;
 	}
 }
-
-.content-border {
-	box-sizing: border-box;
-	border-right: black 10px solid;
-	border-left: black 10px solid;
-	&:last-child {
-		border-right: 0;
-	}
-	&:first-child {
-		border-left: 0;
-	}
-}

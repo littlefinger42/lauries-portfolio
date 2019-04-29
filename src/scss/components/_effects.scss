@@ -1,8 +1,8 @@
 .corner-borders--2px {
 	padding: 16px;
-	@include corner-borders($color-headings, 20, 2);
+	@include corner-borders($colour-headings, 20, 2);
 }
 .corner-borders--2px-alt {
 	padding: 16px;
-	@include corner-borders($color-headings-alt, 20, 2);
+	@include corner-borders($colour-headings-alt, 20, 2);
 }
