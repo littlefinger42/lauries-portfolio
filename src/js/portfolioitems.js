@@ -36,18 +36,18 @@
         src: "brand"
       }
     },
-    {
-      title: "Startup Stamford",
-      desc:
-        "Start-Up Stamford is a local charity competition hosted in Stamford, UK. Its aim is to help young people get started in business through mentoring and personalised investment. Start-Up Stamford's founder, Martin Fox, gave me the brief to create their website. He desired an attractive, modern site, which can easily be used and run by young people. The purpose of the site was to explain the background of the competition, and provide a platform on which contestants can enter. </p><p>I started the project with WordPress as I knew this is the CMS that the website manager will be familiar with. Normally I like to program original code and widgets, but as someone else would be managing the site after me, I opted to use WordPress plugins. This was to keep the admin interface as clean and simple as possible. After installing a basic theme, I added parallax scrolling elements, extra jQuery and my own child style sheet. I plan to update the site now my skills are more developed, to remove all bugs.",
-      url: "stamford.youth-startup.org.uk",
-      date: "September 2014",
-      live: false,
-      background: {
-        type: "img",
-        src: "startup"
-      }
-    },
+    // {
+    //   title: "Startup Stamford",
+    //   desc:
+    //     "Start-Up Stamford is a local charity competition hosted in Stamford, UK. Its aim is to help young people get started in business through mentoring and personalised investment. Start-Up Stamford's founder, Martin Fox, gave me the brief to create their website. He desired an attractive, modern site, which can easily be used and run by young people. The purpose of the site was to explain the background of the competition, and provide a platform on which contestants can enter. </p><p>I started the project with WordPress as I knew this is the CMS that the website manager will be familiar with. Normally I like to program original code and widgets, but as someone else would be managing the site after me, I opted to use WordPress plugins. This was to keep the admin interface as clean and simple as possible. After installing a basic theme, I added parallax scrolling elements, extra jQuery and my own child style sheet. I plan to update the site now my skills are more developed, to remove all bugs.",
+    //   url: "stamford.youth-startup.org.uk",
+    //   date: "September 2014",
+    //   live: false,
+    //   background: {
+    //     type: "img",
+    //     src: "startup"
+    //   }
+    // },
     {
       title: "School Website",
       desc:
