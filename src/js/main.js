@@ -13,6 +13,7 @@
       var videoElement = document.createElement("video");
       videoElement.setAttribute("autoplay", true);
       videoElement.setAttribute("loop", true);
+      videoElement.setAttribute("async", true);
       videoElement.muted = true;
 
       var sourceElementMp4 = document.createElement("source");
