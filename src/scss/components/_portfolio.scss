@@ -19,7 +19,13 @@
         position: relative;
         overflow: hidden;
         @include responsive('sm') { 
-            height: $portfolio-item-height * 2;
+            max-height: $portfolio-item-height * 1.5;
+        }
+        @include responsive('md') { 
+            max-height: $portfolio-item-height * 2;
+        }
+        @include responsive('lg') { 
+            max-height: $portfolio-item-height * 2.5;
         }
         &:after {
             content: '';
@@ -32,6 +38,9 @@
             background: rgba(255, 255, 255, 0.4);
         }
         img {
+            height: 100%;
+        }
+        video {
             width: 100%;
         }
     }

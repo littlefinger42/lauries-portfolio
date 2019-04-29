@@ -357,7 +357,13 @@ a {
     overflow: hidden; }
     @media (min-width: 768px) {
       .portfolio .portfolio-item {
-        height: 400px; } }
+        max-height: 300px; } }
+    @media (min-width: 992px) {
+      .portfolio .portfolio-item {
+        max-height: 400px; } }
+    @media (min-width: 1200px) {
+      .portfolio .portfolio-item {
+        max-height: 500px; } }
     .portfolio .portfolio-item:after {
       content: '';
       position: absolute;
@@ -368,6 +374,8 @@ a {
       transition: all 0.3s;
       background: rgba(255, 255, 255, 0.4); }
     .portfolio .portfolio-item img {
+      height: 100%; }
+    .portfolio .portfolio-item video {
       width: 100%; }
   .portfolio .btn-view:focus ~ article:after,
   .portfolio article:hover:after {
