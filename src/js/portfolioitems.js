@@ -15,7 +15,7 @@ window.portfolioItems = [
       title: "Dix Cottages",
       desc:
         "Isobel was clear in her brief that she wanted her site to reflect the calm, beautiful appearance of her holiday cottages. She also found it important that the customers could easily navigate to her booking agency. No content management system was requested at the start of the brief so I initially began designing a static page. However, later down the project the client requested a news section to be added to the homepage. I resolved this by strapping wordpress to the static site and using PHP queries to display a loop of posts under the title “News”. Using clean, calm colours with the aid of photoshop I was able to design the site with the correct feel from the cottage, attracting potential holiday makers. I worked closely with a photographer to make sure we had the correct images for the front slider and the individual cottage pages. This is one of the first websites I created and would love the opportunity to revisit it. I would update the styling with animations and a framework to make it responsive.",
-      url: "dixcottage-thornham.co.uk",
+      url: "https://dixcottage-thornham.co.uk/",
       date: "March 2019",
       live: true,
       background: {
@@ -25,8 +25,7 @@ window.portfolioItems = [
     },
     {
       title: "Brand Remastered",
-      desc:
-        "Brand remastered is an image and branding consultancy in Eindhoven, Netherlands. Arina Capatina, the sole proprietor of this business had a clear vision of what she wanted before starting discussion. It was important for her business to have a strong brand and clean website, consistent with that image. I was contracted for three individual tasks in this project: Logo, Business Cards and Website Design. I started the project by brainstorming logo ideas. Starting with the logo gave clear direction to the other tasks; whilst staying consistent with the company image. The finished logo, designed in Illustrator CS6, can be seen on the top left corner of the site. The web design stage was completed very quickly because the client requested that I base my design on a WordPress template she had bought for an old project. Although I would have liked more freedom, I stuck to the client’s brief.",
+      desc: "Brand remastered is an image and branding consultancy in Eindhoven, Netherlands. Arina Capatina, the sole proprietor of this business had a clear vision of what she wanted before starting discussion. It was important for her business to have a strong brand and clean website, consistent with that image. I was contracted for three individual tasks in this project: Logo, Business Cards and Website Design. I started the project by brainstorming logo ideas. Starting with the logo gave clear direction to the other tasks; whilst staying consistent with the company image. The finished logo, designed in Illustrator CS6, can be seen on the top left corner of the site. The web design stage was completed very quickly because the client requested that I base my design on a WordPress template she had bought for an old project. Although I would have liked more freedom, I stuck to the client’s brief.",
       url: "brandremastered.com",
       date: "",
       live: false,
@@ -63,7 +62,7 @@ window.portfolioItems = [
       title: "English Bookshop",
       desc:
         "The English Bookshop is a bookshop in St Antonin, France. It is unique in the sense that it only sells English books, in a French speaking area. I was offered the project when new owners acquired the shop and wanted to modernise some aspects. Working directly with a graphic designer, we were given the task of creating a suitable logo and fitting site. The site was required to show the location of the shop, a little background information and the contact details. The client also requested that she could change the content herself if needed. As a CMS was required, I started the project installing WordPress. After installing a basic theme, I added my own elements, extra responsive JavaScript and a child style sheet. Luckily, I was provided with large high resolution photos of the town. Using these I integrated a large slider to the homepage. I also added some parallax scrolling effects using them as background images.",
-      url: "theenglishbookshop.org",
+      url: "http://theenglishbookshop.org/",
       date: "May 2015",
       live: true,
       background: {
@@ -99,7 +98,7 @@ window.portfolioItems = [
       title: "Balloon Pins",
       desc:
         "Andrew Kaye has a strong passion for ballooning and wanted a website where he could sell his balloon pins. Unlike other sites I've created, graphics were not the key to this site. His criteria were: simplicity in adding new products and managing; simple layout for people to buy quickly; multiple currency options and payment options for overseas customers. Using OpenCart as my E-Commerce platform, I managed to fulfil each of these criteria. This is one of the first websites I created and would enjoy revisiting it and updating the styling.",
-      url: "websites/reviews.zip",
+      url: "http://balloonpins.co.uk/",
       date: "February 2013",
       live: true,
       background: {
