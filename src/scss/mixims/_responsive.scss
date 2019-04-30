@@ -13,8 +13,11 @@
 	@else if $class == lg {
 	  @media (min-width: 1200px) { @content; }
 	}
+	@else if $class == xl {
+	  @media (min-width: 1600px) { @content; }
+	}
    
 	@else {
-	  @warn "Responsive mixin supports: xs, sm, md, lg";
+	  @warn "Responsive mixin supports: xs, sm, md, lg, xl";
 	}
 }

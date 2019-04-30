@@ -18,13 +18,16 @@
         position: relative;
         overflow: hidden;
         @include responsive('sm') { 
-            max-height: $portfolio-item-height * 1.5;
+            max-height: $portfolio-item-height * 1.2;
         }
         @include responsive('md') { 
-            max-height: $portfolio-item-height * 2;
+            max-height: $portfolio-item-height * 1.6;
         }
         @include responsive('lg') { 
-            max-height: $portfolio-item-height * 2.5;
+            max-height: $portfolio-item-height * 2.1;
+        }
+        @include responsive('xl') { 
+            max-height: $portfolio-item-height * 2.6;
         }
         &:after {
             content: '';
@@ -36,9 +39,10 @@
             transition: all 0.3s;
             background: rgba(255, 255, 255, 0.4);
         }
-        img {
-            height: 100%;
-        }
+        // img {
+        //     height: 100%;
+        // }
+        img,
         video {
             width: 100%;
         }
