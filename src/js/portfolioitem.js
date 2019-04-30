@@ -19,6 +19,14 @@
     document.querySelector("#portfolioItemDesc").innerText = portItem.desc;
     document.querySelector("#portfolioItemDate").innerText = portItem.date;
     var $visitSiteBtn = document.querySelector("#portfolioItemLink");
+    var $portfolioImage = document.querySelector("#portfolioImage");
+    if (!portItem.screenshot) {
+      $visitSiteBtn.style.display = "none";
+      $portfolioImage.style.display = "none";
+    } else {
+      $portfolioImage.src = "../img/screens/" + portItem.background.src + ".png";;
+      $portfolioImage.alt = portItem.background.src + " screenshot";;
+    }
     if (!portItem.live) {
       $visitSiteBtn.style.display = "none";
     } else {

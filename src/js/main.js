@@ -16,7 +16,7 @@
     }
 
     var buttonLink = document.createElement("a");
-    buttonLink.textContent = "View " + portfolioItems[i].title;
+    buttonLink.textContent = portfolioItems[i].title;
     buttonLink.href = "/portfolio.html?id=" + portfolioItems[i].background.src;
     buttonLink.classList.add("btn-view", "p-small");
     buttonLink.classList.add("btn-view", "p-small");
