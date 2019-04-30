@@ -23,7 +23,7 @@ $splash-box-clipping-smaller: polygon(40% 40%, 60% 40%, 65% 65%, 35% 70%);
         &-title a, &-subtitle {
             color: $colour-headings-alt;
             text-decoration: none;
-            &:visited {
+            &:visited, &:focus {
                 color: $colour-headings-alt;
             }
             &:hover {
