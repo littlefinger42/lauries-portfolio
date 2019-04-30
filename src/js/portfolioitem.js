@@ -1,6 +1,10 @@
 (function() {
   const parsedUrl = new URL(window.location.href);
 
+  /**
+   * Gets portfolio item object with ID
+   * @param {String} id 
+   */
   function getPortItem(id) {
     return window.portfolioItems.find(portfolioItem => {
       return portfolioItem.background.src === id;
@@ -14,6 +18,10 @@
     return;
   }
 
+  /**
+   * Builds page with the portItem object data
+   * @param {Object} portItem 
+   */
   function buildPage(portItem) {
     document.querySelector("#portfolioItemTitle").innerText = portItem.title;
     document.querySelector("#portfolioItemDesc").innerText = portItem.desc;

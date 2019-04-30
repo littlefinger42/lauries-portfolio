@@ -23,6 +23,11 @@
     article.appendChild(buttonLink);
   }
 
+  /**
+   * Creates video element and source element dependent on the src string and returns the video element with source as children
+   * @param {String} src 
+   * @returns {$element}
+   */
   function createVideoElement(src) {
     var videoElement = document.createElement("video");
     videoElement.setAttribute("autoplay", true);
@@ -45,6 +50,12 @@
     return videoElement;
   }
 
+  /**
+   * Returns image element with src from string and alt from string
+   * @param {String} src 
+   * @param {String} alt 
+   * @returns {$element}
+   */
   function createImgElement(src, alt) {
     var imgElement = document.createElement("img");
     imgElement.src = "img/port/" + src + ".jpg";
