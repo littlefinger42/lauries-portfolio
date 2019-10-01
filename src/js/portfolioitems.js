@@ -1,5 +1,18 @@
 window.portfolioItems = [
     {
+      title: "Spotify Suggestions Generator",
+      desc:
+        "I made the spotify suggestions generator as a proof of ability in March 2019 for job applications. Since then I've added a features to turn it into a useable tool for DJs and music enthuisasts to fully utalise the Spotify recommendations API. On the spotify desktop application they dont allow you to change specific recommendation parameters such as BPM, key and danceability. This is is a frontend with controls for that API, built on react and redux.",
+      url: "https://spotify-suggestions-generator.netlify.com/",
+      download: "",
+      date: "March 2019",
+      screenshot: true,
+      background: {
+        type: "img",
+        src: "spotify"
+      }
+    },
+    {
       title: "Laura's Portfolio",
       desc:
         "Laura Stout is a professional animator and illustrator. She needed a website to help her find new animation projects. Using influence and aspects of her previous work, we worked together to create a beautiful yet simple design with correctly represented her style. Due to the simplicity of Laura's site, an application framework wasn't requried. Instead I took the opportunity to delve into Static Site Generation with Gatsby and React. Using Netlify's CMS and graphQL queries, I was able to build a system in which Laura can edit and add additional content. For styling I chose styled-components as it works will with Gatsby's component driven design.",
@@ -100,17 +113,17 @@ window.portfolioItems = [
         src: "reviews"
       }
     },
-    {
-      title: "Balloon Pins",
-      desc:
-        "Andrew Kaye has a strong passion for ballooning and wanted a website where he could sell his balloon pins. Unlike other sites I've created, graphics were not the key to this site. His criteria were: simplicity in adding new products and managing; simple layout for people to buy quickly; multiple currency options and payment options for overseas customers. Using OpenCart as my E-Commerce platform, I managed to fulfil each of these criteria. This is one of the first websites I created and would enjoy revisiting it and updating the styling.",
-      url: "http://balloonpins.co.uk/",
-      download: "",
-      date: "February 2013",
-      screenshot: false,
-      background: {
-        type: "video",
-        src: "balloon"
-      }
+    // {
+    //   title: "Balloon Pins",
+    //   desc:
+    //     "Andrew Kaye has a strong passion for ballooning and wanted a website where he could sell his balloon pins. Unlike other sites I've created, graphics were not the key to this site. His criteria were: simplicity in adding new products and managing; simple layout for people to buy quickly; multiple currency options and payment options for overseas customers. Using OpenCart as my E-Commerce platform, I managed to fulfil each of these criteria. This is one of the first websites I created and would enjoy revisiting it and updating the styling.",
+    //   url: "http://balloonpins.co.uk/",
+    //   download: "",
+    //   date: "February 2013",
+    //   screenshot: false,
+    //   background: {
+    //     type: "video",
+    //     src: "balloon"
+    //   }
     }
   ];
