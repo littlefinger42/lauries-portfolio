@@ -125,5 +125,4 @@ window.portfolioItems = [
     //     type: "video",
     //     src: "balloon"
     //   }
-    }
   ];
