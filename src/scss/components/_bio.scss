@@ -1,16 +1,17 @@
 #sectBio {
-	.tagline {
-		padding: $content-padding-lg 0;
-	}
-	.background-white {
-		flex-grow: 1;
-	}
-	.skills-block span {
-		margin: $content-padding-xs / 2;
-		font-size: $font-size-base * 0.9;
-		@include responsive(sm) {
-			margin: $content-padding-xs;
-			font-size: $font-size-base;
-		}
-	}
+  .tagline {
+    padding: $content-padding-lg 0;
+  }
+  .background-white {
+    flex-grow: 1;
+  }
+  .skills-block span {
+    margin: $content-padding-xs / 2;
+    padding: $content-padding-xs;
+    font-size: $font-size-base * 0.9;
+    @include responsive(sm) {
+      padding: $content-padding-sm;
+      font-size: $font-size-base;
+    }
+  }
 }
